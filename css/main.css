@@ -1,0 +1,183 @@
+main {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 15px; }
+  main:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+article {
+  box-sizing: border-box;
+  padding: 15px; }
+
+.col-lg-1 {
+  float: left;
+  width: 8.3333333333%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-1 {
+    float: left;
+    width: 8.3333333333%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-1 .col-sm-1 {
+    float: left;
+    width: 8.3333333333%; } }
+
+.col-lg-2 {
+  float: left;
+  width: 16.6666666667%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-2 {
+    float: left;
+    width: 16.6666666667%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-2 .col-sm-2 {
+    float: left;
+    width: 16.6666666667%; } }
+
+.col-lg-3 {
+  float: left;
+  width: 25%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-3 {
+    float: left;
+    width: 25%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-3 .col-sm-3 {
+    float: left;
+    width: 25%; } }
+
+.col-lg-4 {
+  float: left;
+  width: 33.3333333333%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-4 {
+    float: left;
+    width: 33.3333333333%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-4 .col-sm-4 {
+    float: left;
+    width: 33.3333333333%; } }
+
+.col-lg-5 {
+  float: left;
+  width: 41.6666666667%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-5 {
+    float: left;
+    width: 41.6666666667%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-5 .col-sm-5 {
+    float: left;
+    width: 41.6666666667%; } }
+
+.col-lg-6 {
+  float: left;
+  width: 50%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-6 {
+    float: left;
+    width: 50%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-6 .col-sm-6 {
+    float: left;
+    width: 50%; } }
+
+.col-lg-7 {
+  float: left;
+  width: 58.3333333333%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-7 {
+    float: left;
+    width: 58.3333333333%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-7 .col-sm-7 {
+    float: left;
+    width: 58.3333333333%; } }
+
+.col-lg-8 {
+  float: left;
+  width: 66.6666666667%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-8 {
+    float: left;
+    width: 66.6666666667%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-8 .col-sm-8 {
+    float: left;
+    width: 66.6666666667%; } }
+
+.col-lg-9 {
+  float: left;
+  width: 75%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-9 {
+    float: left;
+    width: 75%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-9 .col-sm-9 {
+    float: left;
+    width: 75%; } }
+
+.col-lg-10 {
+  float: left;
+  width: 83.3333333333%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-10 {
+    float: left;
+    width: 83.3333333333%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-10 .col-sm-10 {
+    float: left;
+    width: 83.3333333333%; } }
+
+.col-lg-11 {
+  float: left;
+  width: 91.6666666667%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-11 {
+    float: left;
+    width: 91.6666666667%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-11 .col-sm-11 {
+    float: left;
+    width: 91.6666666667%; } }
+
+.col-lg-12 {
+  float: left;
+  width: 100%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-12 {
+    float: left;
+    width: 100%; } }
+@media screen and (max-width: 39.99em) {
+  .col-md-12 .col-sm-12 {
+    float: left;
+    width: 100%; } }
+
+article {
+  max-width: 1100px;
+  margin: 20px auto; }
+  article section {
+    column-count: 3; }
+    @media screen and (min-width: 40em) and (max-width: 63.99em) {
+      article section {
+        column-count: 2; } }
+    @media screen and (max-width: 39.99em) {
+      article section {
+        column-count: 1; } }
+
+/*# sourceMappingURL=main.css.map */

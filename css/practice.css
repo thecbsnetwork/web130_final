@@ -1,0 +1,49 @@
+html, body {
+  font-family: 'Comic Sans MS'; }
+
+h2, p {
+  color: #FF69B4;
+  font-family: 'Impact';
+  box-shadow: 2px 2px 10px 8px #0082C4; }
+
+p {
+  color: #0082C4; }
+
+h1 {
+  color: #FF69B4; }
+
+div.tipsy {
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  transform: rotate(-8deg); }
+
+article h2, article p {
+  color: purple; }
+article section {
+  background-color: #DDD; }
+  article section.last {
+    color: green; }
+
+a {
+  color: #0082C4;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+span.link {
+  color: #0082C4;
+  text-decoration: none; }
+  span.link:hover {
+    text-decoration: underline; }
+
+button.green {
+  background-color: #00FF00;
+  border: 2px solid #66ff66; }
+
+button.blue {
+  background-color: #0082C4;
+  border: 2px solid #2bb8ff; }
+
+/*# sourceMappingURL=practice.css.map */
