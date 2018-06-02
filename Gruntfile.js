@@ -84,8 +84,7 @@ module.exports = (grunt) => {
             sass: {
                 tasks: ['dev_sass'],
                 files: [
-                    'scss/*.scss',
-                    'scss/*.sass'
+                    'sass/*.sass'
                 ]
             }
         }
