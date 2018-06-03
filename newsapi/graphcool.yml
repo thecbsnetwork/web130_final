@@ -20,8 +20,8 @@ types: ./types.graphql
 
 functions:
 
-# added by email-password template: (please uncomment)
-# 
+  # added by email-password template: 
+
   signup:
     type: resolver
     schema: src/email-password/signup.graphql
@@ -47,6 +47,8 @@ functions:
 # https://www.graph.cool/docs/reference/auth/authorization/overview-iegoo0heez
 permissions:
   #- operation: "*"
+=======
+  #User
   - operation: User.read
     authenticated: true
   - operation: User.create
@@ -57,7 +59,7 @@ permissions:
       - email
   - operation: User.delete
     authenticated: true
-  # Item
+    #Item
   - operation: Item.read
   - operation: Item.create
     authenticated: true
