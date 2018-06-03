@@ -9,9 +9,9 @@ mutation AuthenticateUser($email: String!, $password: String!){
 }
 `;
 
-$(document).ready(function () {
+$(document).ready(function() {
     if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'login_view') {
-        $('#login-button').on('click', event => {
+        $('#login-button').on('click', (event) => {
             event.preventDefault();
             let username = $('#username').val(),
                 password = $('#password').val();
@@ -25,7 +25,7 @@ $(document).ready(function () {
                         password: password
                     }
                 }),
-                success: response => {
+                success: (response) => {
                     let user = response.data.authenticateUser;
                     if (user === null) {
                         alert('Login failed! Try again.');

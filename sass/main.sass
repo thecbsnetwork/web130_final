@@ -1,4 +1,16 @@
+@import "base"
+@import "colors"
+@import "grid"
 @import "bootstrap"
-
-main
+ 
+main 
+    margin: 0
+    box-sizing: border-box
+    width: 100%
+    padding: 0 15px
     background-color: $red
+    @include clearfix
+
+article 
+    box-sizing: border-box
+    padding: 15px
