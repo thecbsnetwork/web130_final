@@ -46,9 +46,7 @@ functions:
 # Read more here:
 # https://www.graph.cool/docs/reference/auth/authorization/overview-iegoo0heez
 permissions:
-  #- operation: "*"
-=======
-  #User
+    #User
   - operation: User.read
     authenticated: true
   - operation: User.create

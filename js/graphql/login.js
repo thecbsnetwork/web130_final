@@ -32,6 +32,8 @@ $(document).ready(function() {
                     } else {
                         alert('Hello user');
                         console.log(user);
+                        Cookies.set('authorId', user.id, {expires: 7});
+                        Cookies.set('token', user.token, {expires: 7});
                     }
                 },
                 contentType: 'application/json'
