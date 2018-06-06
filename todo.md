@@ -1,0 +1,17 @@
+# Assignment To Do
+- Design login form
+- Authenticate login form
+- Decide content for each day
+- Create database (MySQL?)
+- Connect database
+- Design/decide pages:
+  - Home
+  - Specials
+  - About
+  - Menu
+  - Where do the descriptions of each meal go to?
+  - Where is the login button?
+- Find pictures of food to include from [unsplash.com](https://www.unsplash.com)
+- Design site
+  - must be responsive
+  - must use bootstrap4
