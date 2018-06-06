@@ -11,7 +11,7 @@ let getAllItems = `
     }
 `;
 
-let CreateItem  = `
+let CreateItem = `
     mutation CreateItem ($authorId: ID!, $title: String!, $content: String!, $price: String!) {
         createItem(authorId: $authorId, title: $title, content: $content, price: $price) {
             id,
@@ -21,7 +21,7 @@ let CreateItem  = `
         }
     }
 `;
- 
+
 $(document).ready(function() {
     // List View
     if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'list_view') {
@@ -43,17 +43,16 @@ $(document).ready(function() {
             contentType: 'application/json'
         });
     }
-});
 
-// Form View
+    // Form View
     if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'form_view') {
         $('#save-post-button').on('click', (event) => {
             event.preventDefault();
             let title = $('#title').val(),
                 content = $('#content').val(),
                 price = $('#price').val(),
-                authorId = Cookies.get('authorId');
-                
+                authorId = Cookies.set('authorId');
+
             $.post({
                 url: 'https://api.graph.cool/simple/v1/cjhjst7qq7qom0107gt4ir6pu',
                 data: JSON.stringify({
@@ -73,7 +72,7 @@ $(document).ready(function() {
                     console.log(item);
                 },
                 contentType: 'application/json'
-            }); 
+            });
         });
     }
 });
