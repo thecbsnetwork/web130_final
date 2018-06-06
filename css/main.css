@@ -6299,3 +6299,6 @@ main {
     background-color: #6f42c1; }
   main #about {
     background-color: #ffc107; }
+
+nav {
+  max-width: 1180px; }

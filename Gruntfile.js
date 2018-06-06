@@ -103,7 +103,7 @@ module.exports = (grunt) => {
     grunt.registerTask('dev', 'Run dev tasks.', [
         'jshint:all', 'rollup:dev', 'concat:all', 'sass:dev'
     ]);
-    
+
     grunt.registerTask('code', 'Builds as dev then watches for changes', [
         'dev', 'watch'
     ]);

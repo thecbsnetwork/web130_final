@@ -32,6 +32,7 @@ $(document).ready(function() {
             }),
             success: (response) => {
                 let items = response.data.allItems;
+                console.log(items);
                 let html = '';
                 for (let item of items) {
                     html += `<h2>${item.title}</h2>
