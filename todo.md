@@ -2,7 +2,7 @@
 - Design login form
 - Authenticate login form
 - Decide content for each day
-- Create database (MySQL?)
+- Create database 
 - Connect database
 - Design/decide pages:
   - Home
@@ -15,3 +15,4 @@
 - Design site
   - must be responsive
   - must use bootstrap4
+  - use assignment03 nav
