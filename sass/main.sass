@@ -1,6 +1,3 @@
-@import "base"
-@import "colors"
-@import "grid"
 @import "bootstrap"
  
 main 
@@ -9,7 +6,13 @@ main
     width: 100%
     padding: 0 15px
     @include clearfix
+    #special
+        background-color: $blue
+    #lunch
+        background-color: $red
+    #dinner
+        background-color: $purple
+    #about
+        background-color: $yellow
 
-article 
-    box-sizing: border-box
-    padding: 15px
+

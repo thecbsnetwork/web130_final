@@ -20,7 +20,7 @@ let CreateItem  = `
             price
         }
     }
- `;
+`;
  
 $(document).ready(function() {
     // List View
@@ -35,7 +35,8 @@ $(document).ready(function() {
                 let html = '';
                 for (let item of items) {
                     html += `<h2>${item.title}</h2>
-                             <p>${item.content}</p>`;
+                             <p>${item.content}</p>
+                             <p>${item.price}</p>`;
                 }
                 $('#main-content').html(html);
             },
@@ -50,6 +51,7 @@ $(document).ready(function() {
             event.preventDefault();
             let title = $('#title').val(),
                 content = $('#content').val(),
+                price = $('#price').val(),
                 authorId = Cookies.get('authorId');
                 
             $.post({
@@ -59,6 +61,7 @@ $(document).ready(function() {
                     variables: {
                         title: title,
                         content: content,
+                        price: price,
                         authorId: authorId
                     }
                 }),
