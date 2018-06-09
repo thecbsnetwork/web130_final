@@ -1,14 +1,14 @@
 
 @mixin size($size)  
-    @if $size == small  
+    @if $size == phone 
         @media screen and (max-width: 39.99em)  
             @content
-    @else if $size == medium  
+    @else if $size == tablet  
         @media screen and (min-width: 40em) and (max-width: 63.99em)  
             @content
-    @else if $size == large
+    @else if $size == desktop
         @media screen and (min-width: 64em) 
             @content
-    @else if $size == medium-up
+    @else if $size == tablet-up
         @media screen and (min-width: 40em)
             @content

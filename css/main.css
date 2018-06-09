@@ -6282,11 +6282,24 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/*********************colors *********************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 20px auto; }
+  body header {
+    margin-bottom: 2em;
+    height: 150px; }
+
 main {
   margin: 0;
-  box-sizing: border-box;
   width: 100%;
-  padding: 0 15px; }
+  padding: 0 15px;
+  max-width: 1180px; }
   main::after {
     display: block;
     clear: both;
@@ -6298,7 +6311,130 @@ main {
   main #dinner {
     background-color: #6f42c1; }
   main #about {
-    background-color: #ffc107; }
+    background-color: #ffcc00; }
 
 nav {
-  max-width: 1180px; }
+  width: 100%;
+  clear: both; }
+  nav ul {
+    text-align: left;
+    float: left;
+    width: 100%; }
+    @media screen and (min-width: 64em) {
+      nav ul {
+        background-color: #000000;
+        float: left;
+        display: inline-block; } }
+    nav ul.closed li {
+      background-image: url("../images/Hamburger.png");
+      background-repeat: no-repeat;
+      display: none;
+      background-color: #000000; }
+      @media screen and (min-width: 40em) and (max-width: 63.99em) {
+        nav ul.closed li {
+          display: inline-block;
+          background-image: none;
+          height: 40px;
+          width: 25%; } }
+      @media screen and (min-width: 64em) {
+        nav ul.closed li {
+          display: block;
+          background-image: none;
+          float: left;
+          width: 12%;
+          height: 50px;
+          line-height: 50px;
+          text-align: center; }
+          nav ul.closed li:nth-last-child(1) {
+            border-right: 0; } }
+      nav ul.closed li#mobile-menu {
+        display: block; }
+        @media screen and (min-width: 40em) and (max-width: 63.99em) {
+          nav ul.closed li#mobile-menu {
+            display: none; } }
+        @media screen and (min-width: 64em) {
+          nav ul.closed li#mobile-menu {
+            display: none; } }
+    nav ul.open li.mobile-only {
+      background-image: url("../images/X-Icon.png");
+      background-repeat: no-repeat; }
+      @media screen and (min-width: 40em) and (max-width: 63.99em) {
+        nav ul.open li.mobile-only {
+          display: none; } }
+      @media screen and (min-width: 64em) {
+        nav ul.open li.mobile-only {
+          display: none; } }
+    nav ul li {
+      list-style-type: none;
+      width: auto;
+      line-height: 40px;
+      text-align: center;
+      color: #6d6d6d;
+      background-color: #000000; }
+      @media screen and (min-width: 40em) and (max-width: 63.99em) {
+        nav ul li {
+          float: left;
+          width: 20%; } }
+      nav ul li a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 17px;
+        color: #6d6d6d; }
+        nav ul li a:nth-child(n+2) {
+          display: none; }
+      nav ul li .dropdown {
+        border: 0; }
+        @media screen and (min-width: 40em) and (max-width: 63.99em) {
+          nav ul li .dropdown {
+            display: none; } }
+        @media screen and (min-width: 64em) {
+          nav ul li .dropdown {
+            display: none; } }
+        nav ul li .dropdown li {
+          float: none;
+          width: 100%;
+          padding: 0 20px;
+          color: #6d6d6d;
+          background-color: #000000;
+          border: 0; }
+          @media screen and (min-width: 64em) {
+            nav ul li .dropdown li {
+              display: block;
+              border: 0; } }
+          nav ul li .dropdown li:hover {
+            background-color: #f7f7f7; }
+      nav ul li:hover {
+        background-color: #f7f7f7; }
+        nav ul li:hover ul.dropdown {
+          display: block;
+          border: 0; }
+          @media screen and (min-width: 40em) and (max-width: 63.99em) {
+            nav ul li:hover ul.dropdown {
+              display: flex;
+              left: 0;
+              width: 100%;
+              position: absolute;
+              float: left; } }
+          @media screen and (min-width: 64em) {
+            nav ul li:hover ul.dropdown {
+              display: block;
+              float: left; } }
+
+header {
+  text-align: center; }
+  header .logo-img {
+    width: 250px; }
+  header .header-list {
+    width: 500px;
+    margin: 0 auto; }
+    @media screen and (max-width: 39.99em) {
+      header .header-list {
+        width: auto; } }
+    header .header-list ul {
+      margin: 10px auto; }
+      header .header-list ul li {
+        width: 33.33%;
+        list-style-type: none;
+        float: left; }
+    header .header-list .weather-img {
+      width: 50px; }

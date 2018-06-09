@@ -1,10 +1,26 @@
 @import "bootstrap"
+@import "grid"
+@import "colors"
+
  
-main 
+$parent_menu_items: 4
+$sub_menu_items: 3
+*
+    padding: 0
     margin: 0
     box-sizing: border-box
+body
+    width: 100%
+    margin: 20px auto
+    header
+        margin-bottom: 2em
+        height: 150px
+    
+main 
+    margin: 0
     width: 100%
     padding: 0 15px
+    max-width: 1180px
     @include clearfix
     #special
         background-color: $blue
@@ -14,5 +30,114 @@ main
         background-color: $purple
     #about
         background-color: $yellow
-
-
+nav   
+    width: 100% 
+    clear: both
+    ul
+            text-align: left
+            float: left
+            width: 100%
+            @include size (desktop)
+                background-color: $black
+                float: left
+                display: inline-block
+            &.closed li 
+                background-image: url("../images/Hamburger.png")
+                background-repeat: no-repeat
+                display: none
+                background-color: $black
+                @include size (tablet)
+                    display: inline-block
+                    background-image: none
+                    height: 40px
+                    width: percentage((1/$parent_menu_items))
+                @include size (desktop)
+                    display: block
+                    background-image: none
+                    float: left
+                    width: 12%
+                    height: 50px
+                    line-height: 50px
+                    text-align: center
+                    &:nth-last-child(1)
+                        border-right: 0
+                &#mobile-menu
+                    display: block
+                    @include size (tablet)
+                        display: none 
+                    @include size (desktop) 
+                        display: none 
+            &.open li.mobile-only
+                background-image: url("../images/X-Icon.png")
+                background-repeat: no-repeat
+                @include size (tablet)
+                    display: none
+                @include size (desktop) 
+                    display: none 
+            li
+                list-style-type: none
+                width: auto
+                line-height: 40px
+                text-align: center
+                color: $darkGray
+                background-color: $black
+                @include size (tablet)
+                    float: left
+                    width: 20%
+                a
+                    text-decoration: none
+                    text-align: center
+                    font-size: 17px
+                    color: $darkGray
+                    &:nth-child(n+2) 
+                        display: none
+                .dropdown
+                    border: 0
+                    @include size (tablet)
+                        display: none  
+                    @include size (desktop)
+                        display: none
+                    li
+                        float: none
+                        width: 100%
+                        padding: 0 20px
+                        color: $darkGray
+                        background-color: $black
+                        border: 0                        
+                        @include size (desktop)
+                            display: block
+                            border: 0
+                        &:hover 
+                            background-color: $lightGray
+                &:hover 
+                    background-color: $lightGray
+                    ul.dropdown
+                        display: block 
+                        border: 0  
+                        @include size (tablet)
+                            display: flex
+                            left: 0
+                            width: 100%
+                            position: absolute
+                            float: left
+                        @include size (desktop)
+                            display: block
+                            float: left
+header
+    text-align: center
+    .logo-img
+        width: 250px
+   
+    .header-list
+        width: 500px
+        margin: 0 auto
+        @include size (phone)
+            width: auto
+        ul
+            margin: 10px auto
+            li
+                width: 33.33%
+                list-style-type: none
+                float: left
+        .weather-img
+            width: 50px
