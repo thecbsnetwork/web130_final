@@ -12,14 +12,11 @@ $sub_menu_items: 3
 body
     width: 100%
     margin: 20px auto
-    header
-        margin-bottom: 2em
-        height: 150px
     
 main 
-    margin: 0
     width: 100%
-    padding: 0 15px
+    padding: 15px 0
+    margin: 50px auto
     max-width: 1180px
     @include clearfix
     #special
@@ -37,8 +34,8 @@ nav
             text-align: left
             float: left
             width: 100%
+            background-color: $black
             @include size (desktop)
-                background-color: $black
                 float: left
                 display: inline-block
             &.closed li 
@@ -123,6 +120,13 @@ nav
                         @include size (desktop)
                             display: block
                             float: left
+            .dropdown-toggle::after
+                content: none
+                @include size (desktop)
+                    content: ""
+                @include size (tablet)
+                    content: ""
+                
 header
     text-align: center
     .logo-img

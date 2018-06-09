@@ -6291,14 +6291,11 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   width: 100%;
   margin: 20px auto; }
-  body header {
-    margin-bottom: 2em;
-    height: 150px; }
 
 main {
-  margin: 0;
   width: 100%;
-  padding: 0 15px;
+  padding: 15px 0;
+  margin: 50px auto;
   max-width: 1180px; }
   main::after {
     display: block;
@@ -6319,10 +6316,10 @@ nav {
   nav ul {
     text-align: left;
     float: left;
-    width: 100%; }
+    width: 100%;
+    background-color: #000000; }
     @media screen and (min-width: 64em) {
       nav ul {
-        background-color: #000000;
         float: left;
         display: inline-block; } }
     nav ul.closed li {
@@ -6419,6 +6416,14 @@ nav {
             nav ul li:hover ul.dropdown {
               display: block;
               float: left; } }
+    nav ul .dropdown-toggle::after {
+      content: none; }
+      @media screen and (min-width: 64em) {
+        nav ul .dropdown-toggle::after {
+          content: ""; } }
+      @media screen and (min-width: 40em) and (max-width: 63.99em) {
+        nav ul .dropdown-toggle::after {
+          content: ""; } }
 
 header {
   text-align: center; }
