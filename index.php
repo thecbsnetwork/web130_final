@@ -1,70 +1,42 @@
 <?php include 'includes/header.php'?>
+<?php include 'includes/config.php'?>
     <main class="container">
-        <div class="container" id="special">
-            <div>
-                <div class="col-md-6" id='main-content'>
-                    <h2></h2>
-                </div>
-            </div>
-
-        </div>
         <!--SPECIALS=================================================-->
         <div class="container" id="special">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Daily Specials</h2>
-                    <p>fun, informative description</p>
-                    <p></p>
-                    <h3>Monday</h3>
-                    <p>content from graphQL to go here</p>
-                    <h3>Tuesday</h3>
-                    <p>content from graphQL to go here</p>
-                    <h3>Wednesday</h3>
-                    <p>content from graphQL to go here</p>
-                    <h3>Thursday</h3>
-                    <p>content from graphQL to go here</p>
-                    <h3>Friday</h3>
-                    <p>content from graphQL to go here</p>
-                    <h3>Saturday</h3>
-                    <p>content from graphQL to go here</p>
-                    <h3>Sunday</h3>
-                    <p>content from graphQL to go here</p>
+            <div>
+                <div class="col-lg-12" id='main-content'>
+                    <h2><a href="daily.php">Daily Specials</a></h2>
+                        <div>
+                            <div class="col-md-6">
+                                Monday
+                            </div>
+                            <div class="col-md-6">
+                                Tuesday
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col-md-4">
+                                Wednesday
+                            </div>
+                            <div class="col-md-4">
+                                Thursday
+                            </div>
+                            <div class="col-md-4">
+                                Friday
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col-md-6">
+                                Saturday
+                            </div>
+                            <div class="col-md-6">
+                                Sunday
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
         <!--/specials-->
-        <!--LUNCH====================================================-->
-        <div class="container" id="lunch">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Lunch Menu</h2>
-                    <p>fun, informative description</p>
-                    <h3>Item</h3>
-                    <p>permanent content</p>
-                    <h3>Item</h3>
-                    <p>permanent content</p>
-                    <h3>Item</h3>
-                    <p>permanent content</p>
-                </div>
-            </div>
-        </div>
-        <!--/lunch-->
-        <!--DINNER====================================================-->
-        <div class="container" id="dinner">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Dinner Menu</h2>
-                    <p>fun, informative description</p>
-                    <h3>Item</h3>
-                    <p>permanent content</p>
-                    <h3>Item</h3>
-                    <p>permanent content</p>
-                    <h3>Item</h3>
-                    <p>permanent content</p>
-                </div>
-            </div>
-        </div>
-        <!--/dinner-->
         <!--ABOUT====================================================-->
         <div class="container" id="about">
             <div class="row">
