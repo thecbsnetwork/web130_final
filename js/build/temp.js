@@ -23,7 +23,7 @@ $(document).ready(function () {
                     if (user === null) {
                         alert('Login failed! Try again.');
                     } else {
-                        alert('Hello user');
+                        window.location.href = "https://miminaz.com/mimi/web130/final/add_post.php";
                         console.log(user);
                         Cookies.set('authorId', user.id, { expires: 7 });
                         Cookies.set('token', user.token, { expires: 7 });
@@ -38,6 +38,7 @@ $(document).ready(function () {
 /* global $ JS_PAGE Cookies */
 
 var getAllItems = '\n    query AllItems {\n      allItems {\n        id,\n        title,\n        content,\n        price\n      }\n    }\n';
+var getItem = '\nquery GetItem($id:ID){\n    Item (id: $id){\n      title,\n      content,\n      price\n    }\n}\n';
 
 var CreateItem = '\n    mutation CreateItem ($authorId: ID!, $title: String!, $content: String!, $price: String!) {\n        createItem(authorId: $authorId, title: $title, content: $content, price: $price) {\n            id,\n            title,\n            content,\n            price\n        }\n    }\n';
 
@@ -61,7 +62,7 @@ $(document).ready(function () {
                     for (var _iterator = items[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                         var item = _step.value;
 
-                        html += '<h2>' + item.title + '</h2>\n                             <p>' + item.content + '</p>\n                             <p>' + item.price + '</p>';
+                        html += '\n                    <h2><a href="item_detail.php#' + item.id + '">\n                    ' + item.title + '</a></h2>\n                             <p>' + item.content + '</p>\n                             <p>' + item.price + '</p>\n                             ';
                     }
                 } catch (err) {
                     _didIteratorError = true;
@@ -83,6 +84,28 @@ $(document).ready(function () {
             contentType: 'application/json'
         });
     }
+    // Detail View
+    if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'detail_view') {
+        var item_id = window.location.hash.substring(1);
+        console.log('Item id is? ' + item_id);
+        $.post({
+            url: 'https://api.graph.cool/simple/v1/cjhjst7qq7qom0107gt4ir6pu',
+            data: JSON.stringify({
+                query: getItem,
+                variables: {
+                    id: item_id
+                }
+
+            }),
+            success: function success(response) {
+                var item = response.data.Item;
+                $('#item-title').html(item.title);
+                $('#item-content').html(item.content);
+                $('#item-price').html(item.price);
+            },
+            contentType: 'application/json'
+        });
+    }
 
     // Form View
     if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'form_view') {
@@ -91,7 +114,7 @@ $(document).ready(function () {
             var title = $('#title').val(),
                 content = $('#content').val(),
                 price = $('#price').val(),
-                authorId = Cookies.set('authorId');
+                authorId = Cookies.get('authorId');
 
             $.post({
                 url: 'https://api.graph.cool/simple/v1/cjhjst7qq7qom0107gt4ir6pu',
@@ -108,8 +131,8 @@ $(document).ready(function () {
                     Authorization: 'Bearer ' + Cookies.get('token')
                 },
                 success: function success(response) {
-                    var item = response.data;
-                    console.log(item);
+                    var item = response.data.CreateItem;
+                    window.location = 'item_detail.php#' + item.id;
                 },
                 contentType: 'application/json'
             });

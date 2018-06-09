@@ -19,10 +19,7 @@
         <div class="header-list">
             <ul>
                 <li>
-                    <h3 class="today-Date">today date</h3>
-                </li>
-                <li>
-                    <img class="weather-img" src="images/icon-weather-sunrainheavy-512.png" />
+                    <h4 class="today-Date"><a href="daily.php">Today Special</a></h4>
                 </li>
                 <li>
                     <a href="login.php">
@@ -40,7 +37,7 @@
             <li id="mobile-menu" class="mobile-only">
                 <a href="#">Menu</a>
             </li>
-            <li><a href="index.html">Home <span class="sr-only">(current)</span></a>
+            <li><a href="index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li>
                 <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

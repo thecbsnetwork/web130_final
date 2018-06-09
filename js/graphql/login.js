@@ -30,10 +30,10 @@ $(document).ready(function() {
                     if (user === null) {
                         alert('Login failed! Try again.');
                     } else {
-                        alert('Hello user');
+                        window.location.href = "https://miminaz.com/mimi/web130/final/add_post.php";
                         console.log(user);
-                        Cookies.set('authorId', user.id, {expires: 7});
-                        Cookies.set('token', user.token, {expires: 7});
+                        Cookies.set('authorId', user.id, { expires: 7 });
+                        Cookies.set('token', user.token, { expires: 7 });
                     }
                 },
                 contentType: 'application/json'
