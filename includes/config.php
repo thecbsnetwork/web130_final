@@ -1,5 +1,7 @@
 <?php
-    
+//prevents date errors
+    date_default_timezone_set('America/Los_Angeles');
+
 //superglobal $_GET to grab querystring from URL
     
     if(isset($_GET['day']))
