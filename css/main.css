@@ -6301,14 +6301,6 @@ main {
     display: block;
     clear: both;
     content: ""; }
-  main #special {
-    background-color: #007bff; }
-  main #lunch {
-    background-color: #dc3545; }
-  main #dinner {
-    background-color: #6f42c1; }
-  main #about {
-    background-color: #ffcc00; }
 
 nav {
   width: 100%;

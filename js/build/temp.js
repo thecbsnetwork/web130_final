@@ -54,6 +54,7 @@ $(document).ready(function () {
                 var items = response.data.allItems;
                 console.log(items);
                 var html = '';
+
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
                 var _iteratorError = undefined;
@@ -62,7 +63,7 @@ $(document).ready(function () {
                     for (var _iterator = items[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                         var item = _step.value;
 
-                        html += '\n                    <h2><a href="item_detail.php#' + item.id + '">\n                    ' + item.title + '</a></h2>\n                             <p>' + item.content + '</p>\n                             <p>' + item.price + '</p>\n                             ';
+                        html += '<div class="row">\n                    <div class="col-md-6" id="item-' + item.id + '">\n                    <h2><a href="item_detail.php#' + item.id + '">\n                    ' + item.title + '</a></h2>\n                        <p>' + item.content + '</p>\n                         <p>' + item.price + '</p>\n                        </div>\n                    </div>';
                     }
                 } catch (err) {
                     _didIteratorError = true;
@@ -79,8 +80,12 @@ $(document).ready(function () {
                     }
                 }
 
+                
+                // $('#item-title').html(item.title);
+                // $('#item-content').html(item.content);
                 $('#main-content').html(html);
             },
+
             contentType: 'application/json'
         });
     }
@@ -95,7 +100,6 @@ $(document).ready(function () {
                 variables: {
                     id: item_id
                 }
-
             }),
             success: function success(response) {
                 var item = response.data.Item;
