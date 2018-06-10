@@ -1,4 +1,6 @@
 <?php include 'includes/header.php'?>
+<?php include 'includes/config.php'?>
+
     <main class="container">
         <section class="justify-content-center">
             <article class="col-md-8 ">
@@ -9,6 +11,8 @@
                 <div id="item-price">
                     price
                 </div>
+                <img src="images/<?=$dailyImage?>" alt="<?=$dailyAlt?>">
+
             </article>
        
     <script type="text/javascript">

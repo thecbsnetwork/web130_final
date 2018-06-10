@@ -6435,3 +6435,6 @@ header {
         float: left; }
     header .header-list .weather-img {
       width: 50px; }
+
+img {
+  width: 50%; }

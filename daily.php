@@ -3,13 +3,10 @@
     <div class="container" id="daily">
         <div class="justify-content-center">
             <div class="col-md-8 ">
-                <h1 id="item-title" class="title"><?=$heading1?></h1>
-                <div id="item-content">
-                    <img src="images/<?=$dailyImage?>" alt="<?=$dailyAlt?>">
-                    <p><?=$heading2?></p>
-                    <p><?=$content?></p>
-                    <p>$<?=$price?></p>
+                <h1 id="item-title" class="title"></h1>
+                <div id="item-content">  
                 </div>
+                <img src="images/<?=$dailyImage?>" alt="<?=$dailyAlt?>">
             </div> 
         </div>
     </div>

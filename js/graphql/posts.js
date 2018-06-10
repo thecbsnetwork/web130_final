@@ -43,7 +43,6 @@ $(document).ready(function() {
                 let items = response.data.allItems;
                 console.log(items);
                 let html = '';
-
                 for (let item of items) {
                     html += `<div class="row">
                     <div class="col-md-6" id="item-${item.id}">
@@ -63,7 +62,6 @@ $(document).ready(function() {
     // Detail View
     if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'detail_view') {
         let item_id = window.location.hash.substring(1);
-        console.log('Item id is? ' + item_id);
         $.post({
             url: 'https://api.graph.cool/simple/v1/cjhjst7qq7qom0107gt4ir6pu',
             data: JSON.stringify({

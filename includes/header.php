@@ -19,7 +19,7 @@
         <div class="header-list">
             <ul>
                 <li>
-                    <h4 class="today-Date"><a href="daily.php">Today Special</a></h4>
+                    <h4 class="today-Date"><a href="daily.php">Daily Specials</a></h4>
                 </li>
                 <li>
                     <a href="login.php">
