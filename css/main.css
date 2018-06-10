@@ -6297,10 +6297,6 @@ main {
   padding: 15px 0;
   margin: 50px auto;
   max-width: 1180px; }
-  main::after {
-    display: block;
-    clear: both;
-    content: ""; }
 
 nav {
   width: 100%;
@@ -6421,10 +6417,12 @@ header {
   text-align: center;
   height: 100px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
-  height: 0;
-  margin: 0;
-  padding: 0; }
+  padding-bottom: 20px; }
+  @media screen and (max-width: 39.99em) {
+    header {
+      height: 0;
+      margin: 0;
+      padding: 0; } }
   header .logo {
     font-family: 'Cinzel Decorative', cursive;
     margin: 30px auto; }
@@ -6445,6 +6443,17 @@ header {
     header .header-list .weather-img {
       width: 50px; }
 
+.banner {
+  background-image: url("../images/mon.jpg");
+  background-size: cover;
+  margin-bottom: 30px;
+  padding: 2em;
+  height: 550px; }
+  .banner h2 {
+    text-align: center; }
+    .banner h2 a {
+      color: #b53d3d; }
+
 img {
   width: 50%; }
 
@@ -6455,7 +6464,3 @@ img {
   display: flex;
   padding: 2em;
   margin-bottom: 10px; }
-  #special h2 {
-    clear: both;
-    text-align: center;
-    color: #b53d3d; }

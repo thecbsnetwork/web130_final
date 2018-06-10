@@ -1,10 +1,10 @@
 <?php include 'includes/header.php'?>
-        <main class="container-fluid">
+       <div class="container-fluid">
             <!--SPECIALS=================================================-->
             <div class="row justify-content-center"> 
-                    <div>
+                    <div class="banner">
                         <h2><a href="daily.php">Daily Specials</a></h2>
-                    </div>
+                    
                     <div class="col-sm-12 col-md-8"  id="special">
                     <div class="col-md-3">
                         <a href="item_detail.php#cji85dj701z3701292738ne7q">
@@ -39,9 +39,11 @@
                                 Sunday</a>
                     </div>
                 </div>
+                </div>
             </div>
 
             <!--/specials-->
+            <main>
             <div class="container" id="main-content">
                 <div class="row">
                     <article class="col-md-6">

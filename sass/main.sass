@@ -18,15 +18,7 @@ main
     padding: 15px 0
     margin: 50px auto
     max-width: 1180px
-    @include clearfix
-    // #special
-    //     background-color: $blue
-    // #lunch
-    //     background-color: $red
-    // #dinner
-    //     background-color: $purple
-    // #about
-    //     background-color: $yellow
+
 nav   
     width: 100% 
     clear: both
@@ -133,10 +125,9 @@ header
     margin-bottom: 30px
     padding-bottom: 20px
     @include size (phone)
-    height: 0
-    margin: 0
-    padding: 0
-
+        height: 0
+        margin: 0
+        padding: 0
     .logo
         font-family: 'Cinzel Decorative', cursive
         margin: 30px auto
@@ -157,7 +148,17 @@ header
                     width: 40%
         .weather-img
             width: 50px
-
+.banner
+    background-image: url('../images/mon.jpg')
+    background-size: cover
+    margin-bottom: 30px
+    padding: 2em
+    height: 550px
+    h2
+        text-align: center
+        a
+            color: $darkRed
+    
 img
     width: 50%
 .row
@@ -167,9 +168,6 @@ img
     display: flex
     padding: 2em
     margin-bottom: 10px
-    h2
-        clear: both
-        text-align: center
-        color: $darkRed
+    
 // .today-Date
 //     font-size: 12px
