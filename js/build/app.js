@@ -10583,7 +10583,7 @@ $(document).ready(function () {
             }),
             success: function success(response) {
                 var items = response.data.allItems;
-                console.log(items);
+                // console.log(items);
                 var html = '';
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
@@ -10620,6 +10620,8 @@ $(document).ready(function () {
     // Detail View
     if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'detail_view') {
         var item_id = window.location.hash.substring(1);
+        console.log('item id is? ' + item_id);
+
         $.post({
             url: 'https://api.graph.cool/simple/v1/cjhjst7qq7qom0107gt4ir6pu',
             data: JSON.stringify({
@@ -10663,7 +10665,7 @@ $(document).ready(function () {
                 },
                 success: function success(response) {
                     var item = response.data.CreateItem;
-                    window.location = 'item_detail.php#' + item.id;
+                    window.location = 'index.php';
                 },
                 contentType: 'application/json'
             });

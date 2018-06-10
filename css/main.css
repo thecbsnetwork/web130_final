@@ -6418,23 +6418,44 @@ nav {
           content: ""; } }
 
 header {
-  text-align: center; }
-  header .logo-img {
-    width: 250px; }
+  text-align: center;
+  height: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  height: 0;
+  margin: 0;
+  padding: 0; }
+  header .logo {
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 30px auto; }
+    header .logo a {
+      color: #b53d3d; }
   header .header-list {
     width: 500px;
-    margin: 0 auto; }
-    @media screen and (max-width: 39.99em) {
-      header .header-list {
-        width: auto; } }
+    margin: 0 auto;
+      margin-width: auto; }
     header .header-list ul {
       margin: 10px auto; }
       header .header-list ul li {
-        width: 33.33%;
+        width: 20%;
         list-style-type: none;
         float: left; }
+        header .header-list ul li:first-child {
+          width: 40%; }
     header .header-list .weather-img {
       width: 50px; }
 
 img {
   width: 50%; }
+
+.row {
+  display: block; }
+
+#special {
+  display: flex;
+  padding: 2em;
+  margin-bottom: 10px; }
+  #special h2 {
+    clear: both;
+    text-align: center;
+    color: #b53d3d; }

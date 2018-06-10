@@ -1,3 +1,4 @@
+<?php include 'includes/config.php'?>
 <!DOCTYPE html>
 <html>
 
@@ -5,6 +6,8 @@
     <meta charset="utf-8">
     <title>MimiSmith Restaurant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
 </head>
@@ -12,18 +15,26 @@
 <body>
 
     <header>
-        <h1 class="site-title">
+        <h1 class="logo">
             <a href="https://miminaz.com/mimi/web130/final">
-                <img class="logo-img" src="https://fontmeme.com/permalink/180609/fc2fa8c92e1611c27d1044d50c990494.png" alt="old-english-fonts" border="0"></a>
+                <h3>MimiSmith</h3></a>
         </h1>
         <div class="header-list">
             <ul>
                 <li>
-                    <h4 class="today-Date"><a href="daily.php">Daily Specials</a></h4>
+                    <h6 class="today-Date"><a href="daily.php"><?=$day?> <?=$today?> - Special</a></h6>
+                </li>
+                <li>
+                <i class="fab fa-facebook-square"></i>
+                </li>
+                <li>
+                <i class="fab fa-instagram"></i>
+
+
                 </li>
                 <li>
                     <a href="login.php">
-                    Login
+                    <i class="fas fa-sign-in-alt"></i>Login
                 </a>
                 </li>
             </ul>
