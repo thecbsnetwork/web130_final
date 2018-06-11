@@ -18,15 +18,7 @@ main
     padding: 15px 0
     margin: 50px auto
     max-width: 1180px
-    @include clearfix
-    // #special
-    //     background-color: $blue
-    // #lunch
-    //     background-color: $red
-    // #dinner
-    //     background-color: $purple
-    // #about
-    //     background-color: $yellow
+
 nav   
     width: 100% 
     clear: both
@@ -129,22 +121,53 @@ nav
                 
 header
     text-align: center
-    .logo-img
-        width: 250px
-   
+    height: 100px
+    margin-bottom: 30px
+    padding-bottom: 20px
+    @include size (phone)
+        height: 0
+        margin: 0
+        padding: 0
+    .logo
+        font-family: 'Cinzel Decorative', cursive
+        margin: 30px auto
+        a
+            color: $darkRed
     .header-list
         width: 500px
         margin: 0 auto
-        @include size (phone)
+       
             width: auto
         ul
             margin: 10px auto
             li
-                width: 33.33%
+                width: 20%
                 list-style-type: none
                 float: left
+                &:first-child
+                    width: 40%
         .weather-img
             width: 50px
-
+.banner
+    background-image: url('../images/mon.jpg')
+    background-size: cover
+    margin-bottom: 30px
+    padding: 2em
+    height: 550px
+    h2
+        text-align: center
+        a
+            color: $darkRed
+    
 img
     width: 50%
+.row
+    display: block
+
+#special
+    display: flex
+    padding: 2em
+    margin-bottom: 10px
+    
+// .today-Date
+//     font-size: 12px
