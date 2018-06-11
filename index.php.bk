@@ -1,0 +1,29 @@
+<?php include 'includes/header.php'?>
+    <main class="container">
+        <div class="container" id="special">
+                <div class="col-md-6">
+                <div class="col-md-3" id='main-content'>
+                    
+                </div>
+            </div>
+
+        </div>
+       
+        <!--ABOUT====================================================-->
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About MimiSmith Restaurant</h2>
+                    <p>Our restaurant is the best and fanciest.</p>
+                </div>
+            </div>
+        </div>
+        <!--/about-->
+    </main>
+    <script type="text/javascript">
+        var JS_PAGE = 'list_view';
+    </script>
+    <script type="text/javascript" src="js/build/app.js"></script>
+</body>
+
+</html>
