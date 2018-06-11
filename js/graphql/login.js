@@ -32,8 +32,8 @@ $(document).ready(function() {
                     } else {
                         window.location.href = "https://miminaz.com/mimi/web130/final/add_post.php";
                         console.log(user);
-                        Cookies.set('authorId', user.id, { expires: 7 });
-                        Cookies.set('token', user.token, { expires: 7 });
+                        Cookies.set('authorId', user.id);
+                        Cookies.set('token', user.token);
                     }
                 },
                 contentType: 'application/json'

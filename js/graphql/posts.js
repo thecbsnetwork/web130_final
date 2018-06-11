@@ -109,7 +109,6 @@ $(document).ready(function() {
                 success: (response) => {
                     let item = response.data.CreateItem;
                     window.location = 'index.php';
-
                 },
                 contentType: 'application/json'
             });

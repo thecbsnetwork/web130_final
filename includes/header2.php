@@ -16,11 +16,12 @@
 <body>
 
     <header>
+        
+        <div class="header-list">
         <h1 class="logo">
             <a href="https://miminaz.com/mimi/web130/final">
                 <h3>MimiSmith</h3></a>
         </h1>
-        <div class="header-list">
             <ul>
                 <li>
                     <h6 class="today-Date"><a href="daily.php"><?=$day?> <?=$today?> - Special</a></h6>
@@ -43,41 +44,4 @@
 
         </div>
     </header>
-    <!--NAVBAR=================================================-->
-    <nav class="sticky-top">
-        <ul class="closed">
-            <li id="mobile-menu" class="mobile-only">
-                <a href="#">Menu</a>
-            </li>
-            <li><a href="index.php">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li>
-                <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Now Serving
-                </a>
-                <ul class="dropdown">
-                    <li>
-                        <a href="#">
-                                Specials
-                            </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                                Lunch
-                            </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                                Dinner
-                            </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    About
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <!--/navbar-->
+    

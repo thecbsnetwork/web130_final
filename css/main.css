@@ -6416,8 +6416,10 @@ nav {
 header {
   text-align: center;
   height: 100px;
-  margin-bottom: 30px;
-  padding-bottom: 20px; }
+  width: 1180px;
+  padding-bottom: 20px;
+  margin: 30px auto;
+  text-align: left; }
   @media screen and (max-width: 39.99em) {
     header {
       height: 0;
@@ -6425,28 +6427,34 @@ header {
       padding: 0; } }
   header .logo {
     font-family: 'Cinzel Decorative', cursive;
-    margin: 30px auto; }
+    width: 260px;
+    float: left; }
     header .logo a {
       color: #b53d3d; }
   header .header-list {
-    width: 500px;
-    margin: 0 auto;
-      margin-width: auto; }
+    margin: 0 auto; }
     header .header-list ul {
-      margin: 10px auto; }
+      margin: 10px auto;
+      width: 800px;
+      float: right; }
       header .header-list ul li {
-        width: 20%;
+        width: 14%;
         list-style-type: none;
-        float: left; }
+        float: left;
+        font-size: 1.2em;
+        color: #000000; }
         header .header-list ul li:first-child {
           width: 40%; }
-    header .header-list .weather-img {
-      width: 50px; }
+      header .header-list ul .today-Date a {
+        font-size: 1.2em;
+        color: #ffcc00;
+        font-family: 'Irish Grover', cursive; }
+      header .header-list ul a {
+        color: #000000; }
 
 .banner {
   background-image: url("../images/mon.jpg");
   background-size: cover;
-  margin-bottom: 30px;
   padding: 2em;
   height: 550px; }
   .banner h2 {
@@ -6463,4 +6471,11 @@ img {
 #special {
   display: flex;
   padding: 2em;
-  margin-bottom: 10px; }
+  margin: auto; }
+  #special a {
+    color: #000000;
+    font-size: 1.5em;
+    font-family: 'Irish Grover', cursive; }
+    #special a:hover {
+      text-decoration: none;
+      color: #6d6d6d; }
