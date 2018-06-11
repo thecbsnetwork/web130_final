@@ -45,11 +45,12 @@ $(document).ready(function() {
                 let html = '';
                 for (let item of items) {
                     html += `<div class="row">
-                    <div class="col-md-6" id="item-${item.id}">
-                    <h2><a href="item_detail.php#${item.id}">
+                    <div class="col-md-12" id="item-${item.id}">
+                    <h2 id="item-title"><a href="item_detail.php#${item.id}">
                     ${item.title}</a></h2>
-                        <p>${item.content}</p>
-                         <p>${item.price}</p>
+                    <img src="../final/images/item-${item.id}.jpg">
+                        <p  class="col-md-6" id="item-content">${item.content}</p>
+                         <p  class="col-md-3" id="item-price" >$ ${item.price}</p>
                         </div>
                     </div>`;
                 };
@@ -77,6 +78,7 @@ $(document).ready(function() {
                 $('#item-title').html(item.title);
                 $('#item-content').html(item.content);
                 $('#item-price').html(item.price);
+                $('#item-image').html `<img src="../final/images/item-${item.id}.jpg">`;
             },
             contentType: 'application/json'
         });

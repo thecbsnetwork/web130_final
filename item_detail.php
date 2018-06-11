@@ -4,7 +4,7 @@
             <article class="col-md-12 ">
            
                 <h1 id="item-title" class="headline"></h1>
-                <img src="images/<?=$dailyImage?>" alt="<?=$dailyAlt?>">
+
                 <div id="item-content">
                     Loading...
                 </div>
