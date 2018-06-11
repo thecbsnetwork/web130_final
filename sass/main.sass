@@ -2,190 +2,202 @@
 @import "grid"
 @import "colors"
 
- 
-$parent_menu_items: 4
-$sub_menu_items: 3
 *
     padding: 0
     margin: 0
     box-sizing: border-box
+
 body
     width: 100%
-    margin: 20px auto   
-    
-main 
+    margin: 20px auto
+
+main
     width: 100%
     padding: 15px 0
     margin: 50px auto
     max-width: 1180px
 
-nav   
-    width: 100% 
+nav
+    width: 100%
     clear: both
+    font-family: 'Song Myung', serif
+    margin-top: 50px
     ul
-            text-align: left
-            float: left
-            width: 100%
-            background-color: $black
-            @include size (desktop)
-                float: left
+        text-align: left
+        float: left
+        width: 100%
+        background-color: $yellow
+        &.closed li
+            background-image: url("../images/Hamburger.png")
+            background-repeat: no-repeat
+            display: none
+            background-color: $yellow
+            @include size (tablet)
                 display: inline-block
-            &.closed li 
-                background-image: url("../images/Hamburger.png")
-                background-repeat: no-repeat
-                display: none
-                background-color: $black
-                @include size (tablet)
-                    display: inline-block
-                    background-image: none
-                    height: 40px
-                    width: percentage((1/$parent_menu_items))
-                @include size (desktop)
-                    display: block
-                    background-image: none
-                    float: left
-                    width: 12%
-                    height: 50px
-                    line-height: 50px
-                    text-align: center
-                    &:nth-last-child(1)
-                        border-right: 0
-                &#mobile-menu
-                    display: block
-                    @include size (tablet)
-                        display: none 
-                    @include size (desktop) 
-                        display: none 
-            &.open li.mobile-only
-                background-image: url("../images/X-Icon.png")
-                background-repeat: no-repeat
+                background-image: none
+                height: 40px
+                width: percentage((1/$parent_menu_items))
+            @include size (desktop)
+                display: block
+                background-image: none
+                float: left
+                width: 20%
+                height: 50px
+                line-height: 50px
+                text-align: center
+                &:nth-last-child(1)
+                    border-right: 0
+            &#mobile-menu
+                display: block
                 @include size (tablet)
                     display: none
-                @include size (desktop) 
-                    display: none 
-            li
-                list-style-type: none
-                width: auto
-                line-height: 40px
+                @include size (desktop)
+                    display: none
+        &.open li.mobile-only
+            background-image: url("../images/X-Icon.png")
+            background-repeat: no-repeat
+            @include size (tablet)
+                display: none
+            @include size (desktop)
+                display: none
+        li
+            list-style-type: none
+            width: auto
+            line-height: 40px
+            text-align: center
+            color: $black
+            background-color: $yellow
+            @include size (tablet)
+                float: left
+                width: 20%
+            a
+                text-decoration: none
                 text-align: center
-                color: $darkGray
-                background-color: $black
-                @include size (tablet)
-                    float: left
-                    width: 20%
-                a
+                font-size: 18px
+                color: $black
+                &:nth-child(n+2)
+                    display: none
+                &:hover
                     text-decoration: none
-                    text-align: center
-                    font-size: 17px
-                    color: $darkGray
-                    &:nth-child(n+2) 
-                        display: none
-                .dropdown
+                    color: $black
+            .dropdown
+                border: 0
+                @include size (tablet)
+                    display: none
+                @include size (desktop)
+                    display: none
+                li
+                    float: none
+                    width: 100%
+                    padding: 0 20px
+                    color: $black
+                    background-color: $yellow
+                    border: 0
+                    @include size (desktop)
+                        display: block
+                        border: 0
+                    &:hover
+                        color: $lightGray
+                        background-color: $darkRed
+            &:hover
+                color: $lightGray
+                background-color: $darkRed
+                ul.dropdown
+                    display: block
                     border: 0
                     @include size (tablet)
-                        display: none  
-                    @include size (desktop)
-                        display: none
-                    li
-                        float: none
+                        display: flex
+                        left: 0
                         width: 100%
-                        padding: 0 20px
-                        color: $darkGray
-                        background-color: $black
-                        border: 0                        
-                        @include size (desktop)
-                            display: block
-                            border: 0
-                        &:hover 
-                            background-color: $lightGray
-                &:hover 
-                    background-color: $lightGray
-                    ul.dropdown
-                        display: block 
-                        border: 0  
-                        @include size (tablet)
-                            display: flex
-                            left: 0
-                            width: 100%
-                            position: absolute
-                            float: left
-                        @include size (desktop)
-                            display: block
-                            float: left
-            .dropdown-toggle::after
-                content: none
-                @include size (desktop)
-                    content: ""
-                @include size (tablet)
-                    content: ""
-                
-header
-    text-align: center
-    height: 100px
-    width: 1180px
-    padding-bottom: 20px
-    margin: 30px auto
-    text-align: left
-    @include size (phone)
-        height: 0
-        margin: 0
-        padding: 0
-        display: inline
-    .logo
-        font-family: 'Cinzel Decorative', cursive
-        width: 260px
-        float: left
-        @include size (phone)
-            float: none
-        a
-            color: $darkRed
-    .header-list
-        margin: 0 auto
-        ul
-            margin: 10px auto
-            width: 800px
-            float: right
-            @include size (phone)
-                float: none
-                width: auto
-                
-            li
-                width: 14%
-                list-style-type: none
-                float: left
-                font-size: 1.2em
-                color: $black
-                &:first-child
-                    width: 40%
-                @include size (phone)
-                    float: none
-                    width: auto
-                    margin: 10px auto
-            .today-Date 
-                a
-                    font-size: 1.2em
-                    color: $yellow
-                    font-family: 'Irish Grover', cursive
-            a
-                color: $black
+                        position: absolute
+                        float: left
+                    @include size (desktop)
+                        display: block
+                        float: left
+        .dropdown-toggle::after
+            content: none
+            @include size (desktop)
+                content: ""
+            @include size (tablet)
+                content: ""
 
-                
+header
+    height: 100px
+    padding-bottom: 20px
+    .logo
+        display: inline-block
+        text-align: center
+        a
+            text-decoration: none
+            h3
+                font-family: 'Yesteryear', cursive
+                font-size: 2em
+                line-height: 1em
+                color: $darkRed
+                &:hover
+                    color: $lightBlue
+                    text-decoration: none
+    .today-Date
+        display: inline-block
+        text-align: center
+        p 
+            font-size: 1em
+            color: $darkGray
+            font-family: 'Yesteryear', cursive
+        a
+            font-size: 2em
+            color: $yellow
+            font-family: 'Song Myung', serif
+            text-decoration: none
+            &:hover
+                color: $darkRed
+    .header-list
+        display: inline-block
+        text-align: center
+        ul
+            li
+                display: inline-block
+                list-style-type: none
+                font-size: .75em
+                color: $darkRed
+                a
+                    color: $black
+                    text-decoration: none
+                    padding: 0px 10px
+                    &:hover
+                    color: $darkRed
+                    i.fab, i.fas
+                        font-size: 2em
+                        color: $darkRed
+                        &:hover
+                            text-decoration: none
+
 .banner
-    background-image: url('../images/mon.jpg')
+    background-image: url('../images/food.jpg')
     background-size: cover
-    padding: 2em
     height: 550px
     @include size (phone)
         height: auto
     h2
         text-align: center
         a
-            color: $darkRed
-    
-img
-    width: 70%
-.row
-    display: block
+            font-family: 'Song Myung', serif
+            font-size: 1em
+            color: $darkGray
+            &:hover
+                color: $yellow
+                text-decoration: none
+    #special
+        background-color: $lightGray60
+        a 
+            font-family: 'Song Myung', serif
+            font-size: 1.5em
+            color: $darkGray
+            @include size(tablet)
+                font-size: .95em
+            &:hover 
+                text-decoration: none
+                color: $darkRed
 
 #special
     display: flex
@@ -194,21 +206,21 @@ img
     @include size (phone)
         display: block
     a
-        color: $black
+        color: $darkRed
         font-size: 1.5em
-        font-family: 'Irish Grover', cursive
+        font-family: 'News Cycle', sans-serif
         &:hover
             text-decoration: none
-            color: $darkGray
-#main-content
+            color: $yellow
+
+/*#main-content
     display: block
     clear: both
     .row
         margin: 10px auto
         padding: 1em 0
         width: 50%
-        float: left
-        border-left: 4px solid $gray
+        border-left: 4px solid $lightBlue
         &:nth-child(3),
         &:nth-child(4),
         &:nth-child(5),
@@ -229,27 +241,67 @@ img
         &:nth-child(30)
             width: 33.33%
             background-color: $lightGray
-            float: left
-            border-top: 1px solid $gray
-            border-right: 1px solid $gray
-            border-left: 0
-            padding: 0
+            border: 1px solid $gray
+            padding: 10px
             height: 400px
             #item-title
+                font-family: 'Song Myung', serif
                 text-align: center
+                color: $darkGray
+                font-size: 20px
             #item-content
-                float: left
+                font-family: 'News Cycle', sans-serif
             #item-price
-                float: right
-                               
-    #item-title
-        color: $darkGray
-        font-size: 16px
+                font-family: 'News Cycle', sans-serif
+                font-style: italic */
+
+#daily
+    h1
+        font-family: 'Yesteryear', cursive
+        color: $darkRed
+        font-size: 4em
+        line-height: 2em
         text-align: left
-        clear: both
-        float: none
-    #item-price
-                font-style: italic
+    img
+        max-width: 100%
+        height: auto
+        border-radius: 8px
+    p
+        font-family: 'News Cycle', sans-serif
+        color: $darkGray
+        font-size: 20px
+        font-style: italic
+        line-height: 1.5em
+        #day-title
+            font-family: 'Song Myung', serif
+            font-weight: 700
+
 #about
     clear: both
-    float: left
+    h2
+        font-family: 'Yesteryear', cursive
+        font-size: 2em
+        line-height: 2em
+        padding-bottom: 15px
+        color: $darkRed
+        text-align: left
+    p
+        font-family: 'News Cycle', sans-serif
+        font-size: 16px
+        line-height: 1.5em
+        padding: 10px
+        color: $darkGray
+        text-align: left
+        a
+            color: $darkRed
+            text-decoration: underline
+            &:hover
+                color: $darkGray
+
+form
+    padding-top: 50px
+    font-family: 'News Cycle', sans-serif
+
+.btn-primary
+    background-color: $darkRed
+    border-color: $darkRed

@@ -6283,6 +6283,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 /*********************colors *********************/
+/*universal*/
+/*custom*/
 * {
   padding: 0;
   margin: 0;
@@ -6300,21 +6302,19 @@ main {
 
 nav {
   width: 100%;
-  clear: both; }
+  clear: both;
+  font-family: 'Song Myung', serif;
+  margin-top: 50px; }
   nav ul {
     text-align: left;
     float: left;
     width: 100%;
-    background-color: #000000; }
-    @media screen and (min-width: 64em) {
-      nav ul {
-        float: left;
-        display: inline-block; } }
+    background-color: #FFCC00; }
     nav ul.closed li {
       background-image: url("../images/Hamburger.png");
       background-repeat: no-repeat;
       display: none;
-      background-color: #000000; }
+      background-color: #FFCC00; }
       @media screen and (min-width: 40em) and (max-width: 63.99em) {
         nav ul.closed li {
           display: inline-block;
@@ -6326,7 +6326,7 @@ nav {
           display: block;
           background-image: none;
           float: left;
-          width: 12%;
+          width: 20%;
           height: 50px;
           line-height: 50px;
           text-align: center; }
@@ -6354,8 +6354,8 @@ nav {
       width: auto;
       line-height: 40px;
       text-align: center;
-      color: #6d6d6d;
-      background-color: #000000; }
+      color: #000000;
+      background-color: #FFCC00; }
       @media screen and (min-width: 40em) and (max-width: 63.99em) {
         nav ul li {
           float: left;
@@ -6363,10 +6363,13 @@ nav {
       nav ul li a {
         text-decoration: none;
         text-align: center;
-        font-size: 17px;
-        color: #6d6d6d; }
+        font-size: 18px;
+        color: #000000; }
         nav ul li a:nth-child(n+2) {
           display: none; }
+        nav ul li a:hover {
+          text-decoration: none;
+          color: #000000; }
       nav ul li .dropdown {
         border: 0; }
         @media screen and (min-width: 40em) and (max-width: 63.99em) {
@@ -6379,17 +6382,19 @@ nav {
           float: none;
           width: 100%;
           padding: 0 20px;
-          color: #6d6d6d;
-          background-color: #000000;
+          color: #000000;
+          background-color: #FFCC00;
           border: 0; }
           @media screen and (min-width: 64em) {
             nav ul li .dropdown li {
               display: block;
               border: 0; } }
           nav ul li .dropdown li:hover {
-            background-color: #f7f7f7; }
+            color: #F7F7F7;
+            background-color: #B53D3D; }
       nav ul li:hover {
-        background-color: #f7f7f7; }
+        color: #F7F7F7;
+        background-color: #B53D3D; }
         nav ul li:hover ul.dropdown {
           display: block;
           border: 0; }
@@ -6414,61 +6419,57 @@ nav {
           content: ""; } }
 
 header {
-  text-align: center;
   height: 100px;
-  width: 1180px;
-  padding-bottom: 20px;
-  margin: 30px auto;
-  text-align: left; }
-  @media screen and (max-width: 39.99em) {
-    header {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      display: inline; } }
+  padding-bottom: 20px; }
   header .logo {
-    font-family: 'Cinzel Decorative', cursive;
-    width: 260px;
-    float: left; }
-    @media screen and (max-width: 39.99em) {
-      header .logo {
-        float: none; } }
+    display: inline-block;
+    text-align: center; }
     header .logo a {
-      color: #b53d3d; }
+      text-decoration: none; }
+      header .logo a h3 {
+        font-family: 'Yesteryear', cursive;
+        font-size: 2em;
+        line-height: 1em;
+        color: #B53D3D; }
+        header .logo a h3:hover {
+          color: #3f7AA3;
+          text-decoration: none; }
+  header .today-Date {
+    display: inline-block;
+    text-align: center; }
+    header .today-Date p {
+      font-size: 1em;
+      color: #6D6D6D;
+      font-family: 'Yesteryear', cursive; }
+    header .today-Date a {
+      font-size: 2em;
+      color: #FFCC00;
+      font-family: 'Song Myung', serif;
+      text-decoration: none; }
+      header .today-Date a:hover {
+        color: #B53D3D; }
   header .header-list {
-    margin: 0 auto; }
-    header .header-list ul {
-      margin: 10px auto;
-      width: 800px;
-      float: right; }
-      @media screen and (max-width: 39.99em) {
-        header .header-list ul {
-          float: none;
-          width: auto; } }
-      header .header-list ul li {
-        width: 14%;
-        list-style-type: none;
-        float: left;
-        font-size: 1.2em;
-        color: #000000; }
-        header .header-list ul li:first-child {
-          width: 40%; }
-        @media screen and (max-width: 39.99em) {
-          header .header-list ul li {
-            float: none;
-            width: auto;
-            margin: 10px auto; } }
-      header .header-list ul .today-Date a {
-        font-size: 1.2em;
-        color: #ffcc00;
-        font-family: 'Irish Grover', cursive; }
-      header .header-list ul a {
-        color: #000000; }
+    display: inline-block;
+    text-align: center; }
+    header .header-list ul li {
+      display: inline-block;
+      list-style-type: none;
+      font-size: .75em;
+      color: #B53D3D; }
+      header .header-list ul li a {
+        color: #000000;
+        text-decoration: none;
+        padding: 0px 10px;
+        color: #B53D3D; }
+        header .header-list ul li a i.fab, header .header-list ul li a i.fas {
+          font-size: 2em;
+          color: #B53D3D; }
+          header .header-list ul li a i.fab:hover, header .header-list ul li a i.fas:hover {
+            text-decoration: none; }
 
 .banner {
-  background-image: url("../images/mon.jpg");
+  background-image: url("../images/food.jpg");
   background-size: cover;
-  padding: 2em;
   height: 550px; }
   @media screen and (max-width: 39.99em) {
     .banner {
@@ -6476,13 +6477,24 @@ header {
   .banner h2 {
     text-align: center; }
     .banner h2 a {
-      color: #b53d3d; }
-
-img {
-  width: 70%; }
-
-.row {
-  display: block; }
+      font-family: 'Song Myung', serif;
+      font-size: 1em;
+      color: #6D6D6D; }
+      .banner h2 a:hover {
+        color: #FFCC00;
+        text-decoration: none; }
+  .banner #special {
+    background-color: rgba(247, 247, 247, 0.6); }
+    .banner #special a {
+      font-family: 'Song Myung', serif;
+      font-size: 1.5em;
+      color: #6D6D6D; }
+      @media screen and (min-width: 40em) and (max-width: 63.99em) {
+        .banner #special a {
+          font-size: .95em; } }
+      .banner #special a:hover {
+        text-decoration: none;
+        color: #B53D3D; }
 
 #special {
   display: flex;
@@ -6492,46 +6504,102 @@ img {
     #special {
       display: block; } }
   #special a {
-    color: #000000;
+    color: #B53D3D;
     font-size: 1.5em;
-    font-family: 'Irish Grover', cursive; }
+    font-family: 'News Cycle', sans-serif; }
     #special a:hover {
       text-decoration: none;
-      color: #6d6d6d; }
+      color: #FFCC00; }
 
-#main-content {
-  display: block;
-  clear: both; }
-  #main-content .row {
-    margin: 10px auto;
-    padding: 1em 0;
-    width: 50%;
-    float: left;
-    border-left: 4px solid #ccc; }
-    #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(5), #main-content .row:nth-child(8), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(15), #main-content .row:nth-child(18), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(25), #main-content .row:nth-child(28), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
-      width: 33.33%;
-      background-color: #f7f7f7;
-      float: left;
-      border-top: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-      border-left: 0;
-      padding: 0;
-      height: 400px; }
-      #main-content .row:nth-child(3) #item-title, #main-content .row:nth-child(4) #item-title, #main-content .row:nth-child(5) #item-title, #main-content .row:nth-child(8) #item-title, #main-content .row:nth-child(9) #item-title, #main-content .row:nth-child(10) #item-title, #main-content .row:nth-child(13) #item-title, #main-content .row:nth-child(14) #item-title, #main-content .row:nth-child(15) #item-title, #main-content .row:nth-child(18) #item-title, #main-content .row:nth-child(19) #item-title, #main-content .row:nth-child(20) #item-title, #main-content .row:nth-child(23) #item-title, #main-content .row:nth-child(24) #item-title, #main-content .row:nth-child(25) #item-title, #main-content .row:nth-child(28) #item-title, #main-content .row:nth-child(29) #item-title, #main-content .row:nth-child(30) #item-title {
-        text-align: center; }
-      #main-content .row:nth-child(3) #item-content, #main-content .row:nth-child(4) #item-content, #main-content .row:nth-child(5) #item-content, #main-content .row:nth-child(8) #item-content, #main-content .row:nth-child(9) #item-content, #main-content .row:nth-child(10) #item-content, #main-content .row:nth-child(13) #item-content, #main-content .row:nth-child(14) #item-content, #main-content .row:nth-child(15) #item-content, #main-content .row:nth-child(18) #item-content, #main-content .row:nth-child(19) #item-content, #main-content .row:nth-child(20) #item-content, #main-content .row:nth-child(23) #item-content, #main-content .row:nth-child(24) #item-content, #main-content .row:nth-child(25) #item-content, #main-content .row:nth-child(28) #item-content, #main-content .row:nth-child(29) #item-content, #main-content .row:nth-child(30) #item-content {
-        float: left; }
-      #main-content .row:nth-child(3) #item-price, #main-content .row:nth-child(4) #item-price, #main-content .row:nth-child(5) #item-price, #main-content .row:nth-child(8) #item-price, #main-content .row:nth-child(9) #item-price, #main-content .row:nth-child(10) #item-price, #main-content .row:nth-child(13) #item-price, #main-content .row:nth-child(14) #item-price, #main-content .row:nth-child(15) #item-price, #main-content .row:nth-child(18) #item-price, #main-content .row:nth-child(19) #item-price, #main-content .row:nth-child(20) #item-price, #main-content .row:nth-child(23) #item-price, #main-content .row:nth-child(24) #item-price, #main-content .row:nth-child(25) #item-price, #main-content .row:nth-child(28) #item-price, #main-content .row:nth-child(29) #item-price, #main-content .row:nth-child(30) #item-price {
-        float: right; }
-  #main-content #item-title {
-    color: #6d6d6d;
-    font-size: 16px;
-    text-align: left;
-    clear: both;
-    float: none; }
-  #main-content #item-price {
-    font-style: italic; }
+/*#main-content
+    display: block
+    clear: both
+    .row
+        margin: 10px auto
+        padding: 1em 0
+        width: 50%
+        border-left: 4px solid $lightBlue
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(13),
+        &:nth-child(14),
+        &:nth-child(15),
+        &:nth-child(18),
+        &:nth-child(19),
+        &:nth-child(20),
+        &:nth-child(23),
+        &:nth-child(24),
+        &:nth-child(25),
+        &:nth-child(28),
+        &:nth-child(29),
+        &:nth-child(30)
+            width: 33.33%
+            background-color: $lightGray
+            border: 1px solid $gray
+            padding: 10px
+            height: 400px
+            #item-title
+                font-family: 'Song Myung', serif
+                text-align: center
+                color: $darkGray
+                font-size: 20px
+            #item-content
+                font-family: 'News Cycle', sans-serif
+            #item-price
+                font-family: 'News Cycle', sans-serif
+                font-style: italic */
+#daily h1 {
+  font-family: 'Yesteryear', cursive;
+  color: #B53D3D;
+  font-size: 4em;
+  line-height: 2em;
+  text-align: left; }
+
+#daily img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; }
+
+#daily p {
+  font-family: 'News Cycle', sans-serif;
+  color: #6D6D6D;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.5em; }
+  #daily p #day-title {
+    font-family: 'Song Myung', serif;
+    font-weight: 700; }
 
 #about {
-  clear: both;
-  float: left; }
+  clear: both; }
+  #about h2 {
+    font-family: 'Yesteryear', cursive;
+    font-size: 2em;
+    line-height: 2em;
+    padding-bottom: 15px;
+    color: #B53D3D;
+    text-align: left; }
+  #about p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 10px;
+    color: #6D6D6D;
+    text-align: left; }
+    #about p a {
+      color: #B53D3D;
+      text-decoration: underline; }
+      #about p a:hover {
+        color: #6D6D6D; }
+
+form {
+  padding-top: 50px;
+  font-family: 'News Cycle', sans-serif; }
+
+.btn-primary {
+  background-color: #B53D3D;
+  border-color: #B53D3D; }
