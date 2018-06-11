@@ -43,16 +43,20 @@ $(document).ready(function() {
                 let items = response.data.allItems;
                 console.log(items);
                 let html = '';
+
                 for (let item of items) {
-                    html += `
+                    html += `<div class="row">
+                    <div class="col-md-6" id="item-${item.id}">
                     <h2><a href="item_detail.php#${item.id}">
                     ${item.title}</a></h2>
-                             <p>${item.content}</p>
-                             <p>${item.price}</p>
-                             `;
-                }
+                        <p>${item.content}</p>
+                         <p>${item.price}</p>
+                        </div>
+                    </div>`;
+                };
                 $('#main-content').html(html);
             },
+
             contentType: 'application/json'
         });
     }
@@ -67,7 +71,6 @@ $(document).ready(function() {
                 variables: {
                     id: item_id
                 }
-
             }),
             success: (response) => {
                 let item = response.data.Item;

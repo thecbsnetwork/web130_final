@@ -1,7 +1,6 @@
 <?php include 'includes/header.php'?>
     <main class="container">
-    <main class="container">
-        <section class="row justify-content-center">
+        <section class="justify-content-center">
             <article class="col-md-8 ">
                 <h1 id="item-title" class="headline"></h1>
                 <div id="item-content">
