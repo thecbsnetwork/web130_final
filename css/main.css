@@ -6424,11 +6424,15 @@ header {
     header {
       height: 0;
       margin: 0;
-      padding: 0; } }
+      padding: 0;
+      display: inline; } }
   header .logo {
     font-family: 'Cinzel Decorative', cursive;
     width: 260px;
     float: left; }
+    @media screen and (max-width: 39.99em) {
+      header .logo {
+        float: none; } }
     header .logo a {
       color: #b53d3d; }
   header .header-list {
@@ -6437,6 +6441,10 @@ header {
       margin: 10px auto;
       width: 800px;
       float: right; }
+      @media screen and (max-width: 39.99em) {
+        header .header-list ul {
+          float: none;
+          width: auto; } }
       header .header-list ul li {
         width: 14%;
         list-style-type: none;
@@ -6445,6 +6453,11 @@ header {
         color: #000000; }
         header .header-list ul li:first-child {
           width: 40%; }
+        @media screen and (max-width: 39.99em) {
+          header .header-list ul li {
+            float: none;
+            width: auto;
+            margin: 10px auto; } }
       header .header-list ul .today-Date a {
         font-size: 1.2em;
         color: #ffcc00;
@@ -6457,13 +6470,16 @@ header {
   background-size: cover;
   padding: 2em;
   height: 550px; }
+  @media screen and (max-width: 39.99em) {
+    .banner {
+      height: auto; } }
   .banner h2 {
     text-align: center; }
     .banner h2 a {
       color: #b53d3d; }
 
 img {
-  width: 50%; }
+  width: 70%; }
 
 .row {
   display: block; }
@@ -6472,6 +6488,9 @@ img {
   display: flex;
   padding: 2em;
   margin: auto; }
+  @media screen and (max-width: 39.99em) {
+    #special {
+      display: block; } }
   #special a {
     color: #000000;
     font-size: 1.5em;

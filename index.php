@@ -51,24 +51,20 @@
             </li>
             <li>
                 <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Now Serving
+                    Manu
                 </a>
                 <ul class="dropdown">
                     <li>
-                        <a href="#">
+                        <a href="daily.php">
                                 Specials
                             </a>
                     </li>
                     <li>
                         <a href="#">
-                                Lunch
+                                Menu
                             </a>
                     </li>
-                    <li>
-                        <a href="#">
-                                Dinner
-                            </a>
-                    </li>
+                    
                 </ul>
             </li>
             <li>
