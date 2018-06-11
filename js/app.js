@@ -1,4 +1,5 @@
 import './graphql/login.js';
+import './graphql/logout.js';
 import './graphql/posts.js';
 
 (function($) { // Begin jQuery

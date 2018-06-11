@@ -10556,8 +10556,8 @@ $(document).ready(function () {
                     } else {
                         window.location.href = "https://miminaz.com/mimi/web130/final/add_post.php";
                         console.log(user);
-                        Cookies.set('authorId', user.id, { expires: 7 });
-                        Cookies.set('token', user.token, { expires: 7 });
+                        Cookies.set('authorId', user.id);
+                        Cookies.set('token', user.token);
                     }
                 },
                 contentType: 'application/json'
@@ -10565,6 +10565,74 @@ $(document).ready(function () {
         });
     }
 });
+
+/* global $ , JS_PAGE */
+
+var loginMutation$1 = '\nmutation AuthenticateUser($email: String!, $password: String!){\n  authenticateUser(email: $email, password: $password){\n  id,\n  token\n}\n}\n';
+
+$(document).ready(function () {
+    if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'login_view') {
+        $('#logout-button').on('click', function (event) {
+            event.preventDefault();
+
+            $.post({
+                url: 'https://api.graph.cool/simple/v1/cjhjst7qq7qom0107gt4ir6pu',
+                data: JSON.stringify({
+                    query: loginMutation$1,
+                    variables: {
+                        email: username
+                    }
+                }),
+                success: function success(response) {
+                    var user = response.data;
+                    console.log(user);
+
+                    window.location.href = "https://miminaz.com/mimi/web130/final/index.php";
+                    Cookies.set('authorId', null);
+                    Cookies.set('token', null);
+                },
+                contentType: 'application/json'
+            });
+        });
+    }
+});
+
+// /* global $ , JS_PAGE */
+// let loggedInUser = `
+// query LoggedInUser ($id: ID!){
+//     User(id: $id){
+//     id,
+//   }
+//   }
+// `;
+
+// $(document).ready(function() {
+//     if (typeof JS_PAGE !== 'undefined' && JS_PAGE == 'login_view') {
+//         $('#logout-button').on('click', (event) => {
+//             event.preventDefault();
+
+//             $.post({
+//                 url: 'https://api.graph.cool/simple/v1/cjhjst7qq7qom0107gt4ir6pu',
+//                 data: JSON.stringify({
+//                     query: loggedInUser,
+//                     variables: {
+//                         id: user_id
+//                     }
+
+//                 }),
+//                 success: (response) => {
+//                     let user = response.data.authenticateUser;
+//                     Cookies.set(null);
+//                     Cookies.set(null);
+//                     window.location.href = "https://miminaz.com/mimi/web130/final/index.php";
+
+//                 },
+
+//                 contentType: 'application/json'
+//             });
+//         });
+//     }
+// });
 
 /* global $ JS_PAGE Cookies */
 

@@ -17,10 +17,14 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-10">
-                            <button type="submit" id="login-button" class="btn btn-primary">Login</button>
+                        <div class="col-md-6 col-sm-10">
+                            <button type="submit" id="login-button" class="btn btn-primary btn-lg" >Login</button>
+                
+                            <button type="submit" id="logout-button" class="btn btn-secondary btn-lg">Logout</button>
                         </div>
+
                     </div>
+                    
                 </form>
             </div>
         </div>

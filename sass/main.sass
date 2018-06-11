@@ -11,7 +11,7 @@ $sub_menu_items: 3
     box-sizing: border-box
 body
     width: 100%
-    margin: 20px auto
+    margin: 20px auto   
     
 main 
     width: 100%
@@ -122,36 +122,46 @@ nav
 header
     text-align: center
     height: 100px
-    margin-bottom: 30px
+    width: 1180px
     padding-bottom: 20px
+    margin: 30px auto
+    text-align: left
     @include size (phone)
         height: 0
         margin: 0
         padding: 0
     .logo
         font-family: 'Cinzel Decorative', cursive
-        margin: 30px auto
+        width: 260px
+        float: left
         a
             color: $darkRed
     .header-list
-        width: 500px
         margin: 0 auto
-       
-            width: auto
         ul
             margin: 10px auto
+            width: 800px
+            float: right
             li
-                width: 20%
+                width: 14%
                 list-style-type: none
                 float: left
+                font-size: 1.2em
+                color: $black
                 &:first-child
                     width: 40%
-        .weather-img
-            width: 50px
+            .today-Date 
+                a
+                    font-size: 1.2em
+                    color: $yellow
+                    font-family: 'Irish Grover', cursive
+            a
+                color: $black
+
+                
 .banner
     background-image: url('../images/mon.jpg')
     background-size: cover
-    margin-bottom: 30px
     padding: 2em
     height: 550px
     h2
@@ -167,7 +177,11 @@ img
 #special
     display: flex
     padding: 2em
-    margin-bottom: 10px
-    
-// .today-Date
-//     font-size: 12px
+    margin: auto
+    a
+        color: $black
+        font-size: 1.5em
+        font-family: 'Irish Grover', cursive
+        &:hover
+            text-decoration: none
+            color: $darkGray
