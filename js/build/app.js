@@ -10634,16 +10634,6 @@ $(document).ready(function () {
 //     }
 // });
 
-var taggedTemplateLiteral = function (strings, raw) {
-  return Object.freeze(Object.defineProperties(strings, {
-    raw: {
-      value: Object.freeze(raw)
-    }
-  }));
-};
-
-var _templateObject = taggedTemplateLiteral(['<img src="../final/images/item-', '.jpg">'], ['<img src="../final/images/item-', '.jpg">']);
-
 /* global $ JS_PAGE Cookies */
 
 var getAllItems = '\n    query AllItems {\n      allItems {\n        id,\n        title,\n        content,\n        price\n      }\n    }\n';
@@ -10713,7 +10703,7 @@ $(document).ready(function () {
                 $('#item-title').html(item.title);
                 $('#item-content').html(item.content);
                 $('#item-price').html(item.price);
-                $('#item-image').html(_templateObject, item.id);
+                $('#item-image').html('<img src="../final/images/food.jpg">');
             },
             contentType: 'application/json'
         });

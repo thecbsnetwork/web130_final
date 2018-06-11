@@ -78,7 +78,7 @@ $(document).ready(function() {
                 $('#item-title').html(item.title);
                 $('#item-content').html(item.content);
                 $('#item-price').html(item.price);
-                $('#item-image').html `<img src="../final/images/item-${item.id}.jpg">`;
+                $('#item-image').html(`<img src="../final/images/food.jpg">`);
             },
             contentType: 'application/json'
         });

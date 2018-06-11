@@ -25,8 +25,8 @@ $heading1 = "Today's Special";
         
     case 'Tuesday':
         $heading2 = "Lamb Salad with Fregola";
-         $content = "Roast lamb, sweet onions and arugula topped with a dressing of chewy fregola and capers.";
-         $price = "23";
+        $content = "Roast lamb, sweet onions and arugula topped with a dressing of chewy fregola and capers.";
+        $price = "23";
         $dailyImage = 'tue.jpg';
         $dailyAlt = "tuesday-lamb";
     break;

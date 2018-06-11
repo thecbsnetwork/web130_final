@@ -4,13 +4,17 @@
             <article class="col-md-12 ">
            
                 <h1 id="item-title" class="headline"></h1>
-
+                <div id="item-image">
+                    Loading...
+                </div>
                 <div id="item-content">
                     Loading...
                 </div>
                 <div id="item-price">
                     price
                 </div>
+                <img src="images/<? //=$dailyImage?>" alt="<? //=$dailyAlt?>">
+
                
             </article>
        
