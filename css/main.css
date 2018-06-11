@@ -6429,6 +6429,9 @@ header {
     font-family: 'Cinzel Decorative', cursive;
     width: 260px;
     float: left; }
+    @media screen and (max-width: 39.99em) {
+      header .logo {
+        float: none; } }
     header .logo a {
       color: #b53d3d; }
   header .header-list {
@@ -6437,6 +6440,9 @@ header {
       margin: 10px auto;
       width: 800px;
       float: right; }
+      @media screen and (max-width: 39.99em) {
+        header .header-list ul {
+          float: none; } }
       header .header-list ul li {
         width: 14%;
         list-style-type: none;
@@ -6457,6 +6463,9 @@ header {
   background-size: cover;
   padding: 2em;
   height: 550px; }
+  @media screen and (max-width: 39.99em) {
+    .banner {
+      height: auto; } }
   .banner h2 {
     text-align: center; }
     .banner h2 a {

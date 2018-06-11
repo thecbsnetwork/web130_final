@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Irish+Grover" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-
 </head>
 
 <body>
@@ -57,18 +56,13 @@
                 </a>
                 <ul class="dropdown">
                     <li>
-                        <a href="#">
+                        <a href="daily.php">
                                 Specials
                             </a>
                     </li>
                     <li>
                         <a href="#">
-                                Lunch
-                            </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                                Dinner
+                                Menu
                             </a>
                     </li>
                 </ul>

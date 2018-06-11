@@ -1,19 +1,17 @@
 <?php include 'includes/header.php'?>
-<?php include 'includes/config.php'?>
-
     <main class="container">
-        <section class="justify-content-center">
-            <article class="col-md-8 ">
-                <h2><?=$day?> </h2>
+        <section class=" row justify-content-center">
+            <article class="col-md-12 ">
+           
                 <h1 id="item-title" class="headline"></h1>
+                <img src="images/<?=$dailyImage?>" alt="<?=$dailyAlt?>">
                 <div id="item-content">
                     Loading...
                 </div>
                 <div id="item-price">
                     price
                 </div>
-                <img src="images/<?=$dailyImage?>" alt="<?=$dailyAlt?>">
-
+               
             </article>
        
     <script type="text/javascript">

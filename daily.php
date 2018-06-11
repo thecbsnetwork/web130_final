@@ -1,5 +1,4 @@
 <?php include 'includes/header.php'?>
-<?php include 'includes/config.php'?>
     <div class="container" id="daily">
         <div class="justify-content-center">
             <div class="col-md-8 ">
