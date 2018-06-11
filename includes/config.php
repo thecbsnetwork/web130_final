@@ -16,7 +16,7 @@ $heading1 = "Today's Special";
 {
     case 'Monday':
         $heading2 = "Copper River Sockeye Salmon";
-         $content = "Served with roasted beets, mustard vinaigrette, citrus yogurt.";
+        $content = "Served with roasted beets, mustard vinaigrette, citrus yogurt.";
         $price = "17";
         $item_id= 'cji85dj701z3701292738ne7q';
         $dailyImage = 'mon.jpg';
@@ -32,9 +32,9 @@ $heading1 = "Today's Special";
     break;
         
     case 'Wednesday':
-         $heading2 = "Malted Custard French Toast";
-         $content = "Thick brioche slices in a vanilla-and-malt-spiked custard, caramelized and topped with whipped cream.";
-         $price = "15";
+        $heading2 = "Malted Custard French Toast";
+        $content = "Thick brioche slices in a vanilla-and-malt-spiked custard, caramelized and topped with whipped cream.";
+        $price = "15";
         $dailyImage = 'wed.jpg';
         $dailyAlt = "wednesday-toast";
     break;
@@ -48,25 +48,25 @@ $heading1 = "Today's Special";
     break;
         
     case 'Friday':
-         $heading2 = "Burger with Feta-Yogurt Sauce";
-         $content = "Topped with fresh roma tomatoes and mint leaves served on a thick country bread.";
-         $price = "18";
+        $heading2 = "Burger with Feta-Yogurt Sauce";
+        $content = "Topped with fresh roma tomatoes and mint leaves served on a thick country bread.";
+        $price = "18";
         $dailyImage = 'fri.jpg';
         $dailyAlt = "friday-burger";
     break;
         
     case 'Saturday':
-         $heading2 = "Avocado and Egg Sandwich";
-         $content = "Stacked high with a fried egg, california avocado, jack cheese, and pepper sauce";
-         $price = "11";
+        $heading2 = "Avocado and Egg Sandwich";
+        $content = "Stacked high with a fried egg, california avocado, jack cheese, and pepper sauce";
+        $price = "11";
         $dailyImage = 'sat.jpg';
         $dailyAlt = "saturday-sandwich";
     break;
         
     case 'Sunday':
-         $heading2 = "Roasted Chicken and Vegetables";
-         $content = "Roasted mad hatcher chicken with grilled spring onions and fava bean relish";
-         $price = "28";
+        $heading2 = "Roasted Chicken and Vegetables";
+        $content = "Roasted mad hatcher chicken with grilled spring onions and fava bean relish";
+        $price = "28";
         $item_id = cji85mkn122yh0192wfeab8hh;
         $dailyImage = 'sun.jpg';
         $dailyAlt = "sunday-chicken";
