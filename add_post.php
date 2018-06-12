@@ -24,6 +24,4 @@
 <script type="text/javascript">
     var JS_PAGE = 'form_view';
 </script>
-<script type="text/javascript" src="js/build/app.js"></script>
-</body>
-</html>
+    <?php include 'includes/footer.php';?>
