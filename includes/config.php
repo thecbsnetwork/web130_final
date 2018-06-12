@@ -8,8 +8,8 @@
         $day = $_GET['day'];
     }else{//use current date
         $day = date('l');
-        $today = date("F j"); 
-
+        $today = date("F j");
+        $year = date("Y");
     }
 $heading1 = "Today's Special";
         switch($day)

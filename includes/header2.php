@@ -20,9 +20,9 @@
                 </a>
             </div>
             <div class="today-Date col-lg-4 col-md-4 col-sm-12">
-                    <p>Special for: </p>
+                    <p>Special: </p>
                     <a href="daily.php">
-                        <h5><?=$day?> <?=$today?></h5>
+                        <h5><?=$day?>, <?=$today?></h5>
                     </a>
             </div>
             <div class="header-list col-lg-4 col-md-4 col-sm-12">
@@ -38,8 +38,7 @@
                         </a>
                     </li>
                     <li>
-                        <i class="fas fa-user"></i>
-                        <a href="login.php">Admin Login</a>
+                        <a href="login.php"><i class="fas fa-user"></i> Admin Login</a>
                     </li>
                 </ul>
             </div>

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid inner">
         <div class="row">
             <div class="logo col-lg-4 col-md-4 col-sm-12">
                 <a href="index.php">
@@ -38,15 +38,14 @@
                         </a>
                     </li>
                     <li>
-                        <i class="fas fa-user"></i>
-                        <a href="login.php">Admin Login</a>
+                        <a href="login.php"><i class="fas fa-user"></i> Admin Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
     <!--NAVBAR=================================================-->
-    <nav class="sticky-top">
+    <nav class="sticky-top" id="headernav">
         <ul class="closed">
             <li id="mobile-menu" class="mobile-only">
                 <a href="#">Menu</a>
