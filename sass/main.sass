@@ -17,12 +17,11 @@ main
     padding: 15px 0
     margin: 50px auto
     max-width: 1180px
-
+    
 nav
     width: 100%
     clear: both
     font-family: 'Song Myung', serif
-    margin-top: 50px
     ul
         text-align: left
         float: left
@@ -66,21 +65,22 @@ nav
             width: auto
             line-height: 40px
             text-align: center
-            color: $black
+            color: $darkGray
             background-color: $yellow
             @include size (tablet)
                 float: left
                 width: 20%
             a
+                width: 100%
                 text-decoration: none
                 text-align: center
                 font-size: 18px
-                color: $black
+                color: $darkGray
                 &:nth-child(n+2)
                     display: none
                 &:hover
                     text-decoration: none
-                    color: $black
+                    color: $darkGray
             .dropdown
                 border: 0
                 @include size (tablet)
@@ -91,7 +91,7 @@ nav
                     float: none
                     width: 100%
                     padding: 0 20px
-                    color: $black
+                    color: $darkGray
                     background-color: $yellow
                     border: 0
                     @include size (desktop)
@@ -125,33 +125,40 @@ nav
 header
     height: 100px
     padding-bottom: 20px
+    @include size(tablet)
+        &.inner
+            margin-bottom: 15px
+    @include size(phone)
+        &.inner
+            margin-bottom: 150px
     .logo
+        padding-top: 20px
         text-align: center
         float: left
         a
             text-decoration: none
             h3
                 font-family: 'Yesteryear', cursive
-                font-size: 2em
+                font-size: 3em
                 line-height: 1em
                 color: $darkRed
                 &:hover
-                    color: $lightBlue
+                    color: $brown
                     text-decoration: none
     .today-Date
         display: inline-block
         text-align: center
         p 
-            font-size: 1em
-            color: $darkGray
+            font-size: 1.5em
+            color: $brown
             font-family: 'Yesteryear', cursive
         a
-            font-size: 2em
-            color: $yellow
+            font-size: 2.5em
+            color: $darkRed
             font-family: 'Song Myung', serif
             text-decoration: none
             &:hover
-                color: $darkRed
+                color: $yellow
     .header-list
         display: inline
         text-align: center
@@ -160,20 +167,25 @@ header
                 display: inline-block
                 list-style-type: none
                 font-size: 1em
-                color: $darkRed
+                color: $brown
                 margin-right: 10px
                 margin-top: 25px
+                &:last-child 
+                    vertical-align: top
                 a
-                    color: $black
+                    color: $brown
                     text-decoration: none
                     padding: 0px 10px
                     &:hover
                         color: $darkRed
                 i.fab, i.fas
-                    font-size: 1em
-                    color: $darkRed
+                    font-size: 1.5em
+                    color: $brown
+                    &.fa-user 
+                        font-size: 1em
                     &:hover
                         text-decoration: none
+                        color: $darkRed
 
 .banner
     background-image: url('../images/food.jpg')
@@ -182,7 +194,7 @@ header
     @include size (tablet)
         margin-top: 80px
     @include size (phone)
-        height: auto
+        margin-top: 140px
     h2
         text-align: center
         a
@@ -193,39 +205,29 @@ header
                 color: $yellow
                 text-decoration: none
     #special-header
-        background-color: $lightGray60
+        background-color: $lightGray70
         display: flex
         float: left
         padding: 2em
         margin: auto
+        @include size(phone)
+            display: block
+            .col-2 
+                padding: 20px 0
         a 
             font-family: 'Song Myung', serif
             font-size: 1.5em
-            color: $darkGray
+            color: $darkRed
             @include size(tablet)
                 font-size: .95em
             &:hover 
                 text-decoration: none
-                color: $darkRed
-
-// #special, #detail
-//     display: flex
-//     float: left
-//     padding: 2em
-//     margin: auto
-//     @include size (phone)
-//         display: block
-//     a
-//         color: $darkRed
-//         font-size: .75em
-//         font-family: 'News Cycle', sans-serif
-//         &:hover
-//             text-decoration: none
-//             color: $yellow
+                color: $brown
 
 #main-content
     display: block
     clear: both
+    margin-top: 15px
     .row
         &:nth-child(1),
         &:nth-child(2),
@@ -242,11 +244,9 @@ header
             margin: 10px auto
             padding: 1em 0
             width: 50%
-            border-left: 4px solid $lightBlue
+            border-left: 4px solid $brown
             float: right
             height: 400px
-            padding: 0
-            margin: 0
             @include size(phone)
                 width: auto
                 float: none  
@@ -260,16 +260,22 @@ header
                 text-align: center
                 color: $darkGray
                 font-size: 20px
+                &:hover 
+                    color: $darkRed
             #item-content
                     font-family: 'News Cycle', sans-serif
             #item-price
                     font-family: 'News Cycle', sans-serif
                     font-style: italic 
-                    color: $lightBlue
+                    color: $brown
+                    font-size: 1.5em
             img
                 width: 50%
                 @include size(phone)
                         width: 100%
+            p 
+                padding-top: 10px
+                width: 50%
         &:nth-child(3),
         &:nth-child(4),
         &:nth-child(5),
@@ -309,17 +315,22 @@ header
                 text-align: center
                 color: $darkGray
                 font-size: 20px
+                &:hover 
+                    color: $darkRed
             #item-content
                 font-family: 'News Cycle', sans-serif
             #item-price
                 font-family: 'News Cycle', sans-serif
                 font-style: italic 
-                color: $lightBlue
+                color: $brown
+                font-size: 1.5em
             img
                 width: 70%
                 @include size(phone)
                     width: 100%
-
+            p 
+                padding-top: 10px
+                width: 70%
 
 @include size (tablet)
     #main-content
@@ -346,7 +357,7 @@ header
                 padding: 1em 0
                 width: 50%
                 border: 0
-                border-left: 4px solid $lightBlue
+                border-left: 4px solid $brown
                 float: right
                 background-color: $white
                 #item-title a
@@ -393,16 +404,10 @@ header
                     font-style: italic 
                 img
                     width: 70%
-            
-        
-
-
-                    
-        
-
         
 #daily, #detail
     float: left
+    margin-bottom: 50px
     #today-date
         font-family: 'Yesteryear', cursive
         color: $darkRed
@@ -411,22 +416,42 @@ header
         text-align: left
     #item-image
         img
-            max-width: 100%
+            max-width: 50%
             height: auto
             border-radius: 8px
-
+            float: right
+            @include size(phone)
+                max-width: 100%
+                float: none
     #item-title
         font-family: 'Song Myung', serif
         font-weight: 700
+        padding-top: 50px
+        max-width: 50%
+        @include size(phone)
+            padding: 15px 0px
+            max-width: 100%
     #item-content
         font-family: 'News Cycle', sans-serif
         color: $darkGray
         font-size: 20px
         font-style: italic
         line-height: 1.5em
-        
+        padding: 15px 5px 15px 0px
+        max-width: 50%
+        @include size(phone)
+            max-width: 100%
+    #item-price
+        border-left: 2px solid $brown
+        font-family: 'News Cycle', sans-serif
+        color: $brown
+        font-size: 20px
+        font-style: italic
+        line-height: 1.5em
+        padding-left: 15px
 
 #about
+    padding-top: 55px
     clear: both
     h2
         font-family: 'Yesteryear', cursive
@@ -455,3 +480,29 @@ form
 .btn-primary
     background-color: $darkRed
     border-color: $darkRed
+    
+footer 
+    margin-top: 50px
+    background-color: $yellow
+    height: 75px
+    padding: 15px
+    font-size: .75em
+    line-height: 1.5em
+    color: $brown
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    a 
+        color: $brown
+        text-decoration: underline
+        i 
+            padding-right: 1em
+            text-decoration: none
+        &:hover 
+            color: $darkRed
+    @include size(phone)
+        height: 115px
+        flex-direction: column
+    #copyright, #github, #seattle
+        flex: 0 1 auto
