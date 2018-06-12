@@ -46,11 +46,11 @@ $(document).ready(function() {
                 let html = '';
                 for (let item of items) {
                     html += `<div class="row">
-                    <div class="col-lg-12 col-md-10" id="item-${item.id}">
+                    <div class="col-lg-12 col-md-12" id="item-${item.id}">
                     <h2 id="item-title"><a href="item_detail.php#${item.id}">
                     ${item.title}</a></h2>
                     <img id="item-image" src="./images/item-${item.id}.jpg">
-                        <p  class="col-md-12" id="item-content">${item.content}</p>
+                        <p  class="col-md-10" id="item-content">${item.content}</p>
                          <p  class="col-md-4" id="item-price" >$ ${item.price}</p>
                         </div>
                     </div>`;

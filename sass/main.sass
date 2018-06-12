@@ -194,6 +194,10 @@ header
                 text-decoration: none
     #special-header
         background-color: $lightGray60
+        display: flex
+        float: left
+        padding: 2em
+        margin: auto
         a 
             font-family: 'Song Myung', serif
             font-size: 1.5em
@@ -239,7 +243,10 @@ header
             padding: 1em 0
             width: 50%
             border-left: 4px solid $lightBlue
-            float: left
+            float: right
+            height: 400px
+            padding: 0
+            margin: 0
             @include size(phone)
                 width: auto
                 float: none  
@@ -247,6 +254,7 @@ header
                 border: 1px solid $gray
                 padding: 10px
                 height: auto 
+                margin-bottom: 10px
             #item-title a
                 font-family: 'Song Myung', serif
                 text-align: center
@@ -257,8 +265,9 @@ header
             #item-price
                     font-family: 'News Cycle', sans-serif
                     font-style: italic 
+                    color: $lightBlue
             img
-                width: 70%
+                width: 50%
                 @include size(phone)
                         width: 100%
         &:nth-child(3),
@@ -285,8 +294,16 @@ header
             padding: 10px
             float: left
             height: 400px
+            padding: 0
+            margin: 0
             @include size(phone)
                 width: auto
+                float: none  
+                background-color: $lightGray
+                border: 1px solid $gray
+                padding: 10px
+                height: auto
+                margin-bottom: 10px
             #item-title a
                 font-family: 'Song Myung', serif
                 text-align: center
@@ -297,8 +314,9 @@ header
             #item-price
                 font-family: 'News Cycle', sans-serif
                 font-style: italic 
+                color: $lightBlue
             img
-                width: 50%
+                width: 70%
                 @include size(phone)
                     width: 100%
 
@@ -329,9 +347,8 @@ header
                 width: 50%
                 border: 0
                 border-left: 4px solid $lightBlue
-                float: left
+                float: right
                 background-color: $white
-
                 #item-title a
                     font-family: 'Song Myung', serif
                     text-align: center
@@ -375,7 +392,7 @@ header
                     font-family: 'News Cycle', sans-serif
                     font-style: italic 
                 img
-                    width: 50%
+                    width: 70%
             
         
 
