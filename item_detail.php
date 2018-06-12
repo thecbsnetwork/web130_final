@@ -3,7 +3,7 @@
         <div class="row">
             <div id="item-content" class="col-lg-8 col-md-8 col-sm-12">
                 <h1 id="item-title" class="title"></h1>
-                <img src="images/<? //=$dailyImage?>" alt="<? //=$dailyAlt?>">
+                <img src="images/<?=$dailyImage?>" alt="<?=$dailyAlt?>">
                 <div id="item-image">
                     Loading...
                 </div>

@@ -6422,8 +6422,8 @@ header {
   height: 100px;
   padding-bottom: 20px; }
   header .logo {
-    display: inline-block;
-    text-align: center; }
+    text-align: center;
+    float: left; }
     header .logo a {
       text-decoration: none; }
       header .logo a h3 {
@@ -6449,23 +6449,26 @@ header {
       header .today-Date a:hover {
         color: #B53D3D; }
   header .header-list {
-    display: inline-block;
+    display: inline;
     text-align: center; }
     header .header-list ul li {
       display: inline-block;
       list-style-type: none;
-      font-size: .75em;
-      color: #B53D3D; }
+      font-size: 1em;
+      color: #B53D3D;
+      margin-right: 10px;
+      margin-top: 25px; }
       header .header-list ul li a {
         color: #000000;
         text-decoration: none;
-        padding: 0px 10px;
-        color: #B53D3D; }
-        header .header-list ul li a i.fab, header .header-list ul li a i.fas {
-          font-size: 2em;
+        padding: 0px 10px; }
+        header .header-list ul li a:hover {
           color: #B53D3D; }
-          header .header-list ul li a i.fab:hover, header .header-list ul li a i.fas:hover {
-            text-decoration: none; }
+      header .header-list ul li i.fab, header .header-list ul li i.fas {
+        font-size: 1em;
+        color: #B53D3D; }
+        header .header-list ul li i.fab:hover, header .header-list ul li i.fas:hover {
+          text-decoration: none; }
 
 .banner {
   background-image: url("../images/food.jpg");
@@ -6505,74 +6508,83 @@ header {
       display: block; } }
   #special a {
     color: #B53D3D;
-    font-size: 1.5em;
+    font-size: .75em;
     font-family: 'News Cycle', sans-serif; }
     #special a:hover {
       text-decoration: none;
       color: #FFCC00; }
 
-/*#main-content
-    display: block
-    clear: both
-    .row
-        margin: 10px auto
-        padding: 1em 0
-        width: 50%
-        border-left: 4px solid $lightBlue
-        &:nth-child(3),
-        &:nth-child(4),
-        &:nth-child(5),
-        &:nth-child(8),
-        &:nth-child(9),
-        &:nth-child(10),
-        &:nth-child(13),
-        &:nth-child(14),
-        &:nth-child(15),
-        &:nth-child(18),
-        &:nth-child(19),
-        &:nth-child(20),
-        &:nth-child(23),
-        &:nth-child(24),
-        &:nth-child(25),
-        &:nth-child(28),
-        &:nth-child(29),
-        &:nth-child(30)
-            width: 33.33%
-            background-color: $lightGray
-            border: 1px solid $gray
-            padding: 10px
-            height: 400px
-            #item-title
-                font-family: 'Song Myung', serif
-                text-align: center
-                color: $darkGray
-                font-size: 20px
-            #item-content
-                font-family: 'News Cycle', sans-serif
-            #item-price
-                font-family: 'News Cycle', sans-serif
-                font-style: italic */
-#daily h1 {
-  font-family: 'Yesteryear', cursive;
-  color: #B53D3D;
-  font-size: 4em;
-  line-height: 2em;
-  text-align: left; }
+#main-content {
+  display: block;
+  clear: both; }
+  #main-content .row {
+    margin: 10px auto;
+    padding: 1em 0;
+    width: 50%;
+    border-left: 4px solid #3f7AA3;
+    float: left; }
+    @media screen and (max-width: 39.99em) {
+      #main-content .row {
+        width: auto;
+        float: none; } }
+    #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(5), #main-content .row:nth-child(8), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(15), #main-content .row:nth-child(18), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(25), #main-content .row:nth-child(28), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
+      width: 33.33%;
+      background-color: #F7F7F7;
+      border: 1px solid #CCCCCC;
+      padding: 10px;
+      height: 400px; }
+      @media screen and (max-width: 39.99em) {
+        #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(5), #main-content .row:nth-child(8), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(15), #main-content .row:nth-child(18), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(25), #main-content .row:nth-child(28), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
+          width: auto; } }
+      #main-content .row:nth-child(3) #item-title a, #main-content .row:nth-child(4) #item-title a, #main-content .row:nth-child(5) #item-title a, #main-content .row:nth-child(8) #item-title a, #main-content .row:nth-child(9) #item-title a, #main-content .row:nth-child(10) #item-title a, #main-content .row:nth-child(13) #item-title a, #main-content .row:nth-child(14) #item-title a, #main-content .row:nth-child(15) #item-title a, #main-content .row:nth-child(18) #item-title a, #main-content .row:nth-child(19) #item-title a, #main-content .row:nth-child(20) #item-title a, #main-content .row:nth-child(23) #item-title a, #main-content .row:nth-child(24) #item-title a, #main-content .row:nth-child(25) #item-title a, #main-content .row:nth-child(28) #item-title a, #main-content .row:nth-child(29) #item-title a, #main-content .row:nth-child(30) #item-title a {
+        font-family: 'Song Myung', serif;
+        text-align: center;
+        color: #6D6D6D;
+        font-size: 20px; }
+      #main-content .row:nth-child(3) #item-content, #main-content .row:nth-child(4) #item-content, #main-content .row:nth-child(5) #item-content, #main-content .row:nth-child(8) #item-content, #main-content .row:nth-child(9) #item-content, #main-content .row:nth-child(10) #item-content, #main-content .row:nth-child(13) #item-content, #main-content .row:nth-child(14) #item-content, #main-content .row:nth-child(15) #item-content, #main-content .row:nth-child(18) #item-content, #main-content .row:nth-child(19) #item-content, #main-content .row:nth-child(20) #item-content, #main-content .row:nth-child(23) #item-content, #main-content .row:nth-child(24) #item-content, #main-content .row:nth-child(25) #item-content, #main-content .row:nth-child(28) #item-content, #main-content .row:nth-child(29) #item-content, #main-content .row:nth-child(30) #item-content {
+        font-family: 'News Cycle', sans-serif; }
+      #main-content .row:nth-child(3) #item-price, #main-content .row:nth-child(4) #item-price, #main-content .row:nth-child(5) #item-price, #main-content .row:nth-child(8) #item-price, #main-content .row:nth-child(9) #item-price, #main-content .row:nth-child(10) #item-price, #main-content .row:nth-child(13) #item-price, #main-content .row:nth-child(14) #item-price, #main-content .row:nth-child(15) #item-price, #main-content .row:nth-child(18) #item-price, #main-content .row:nth-child(19) #item-price, #main-content .row:nth-child(20) #item-price, #main-content .row:nth-child(23) #item-price, #main-content .row:nth-child(24) #item-price, #main-content .row:nth-child(25) #item-price, #main-content .row:nth-child(28) #item-price, #main-content .row:nth-child(29) #item-price, #main-content .row:nth-child(30) #item-price {
+        font-family: 'News Cycle', sans-serif;
+        font-style: italic; }
+      #main-content .row:nth-child(3) img, #main-content .row:nth-child(4) img, #main-content .row:nth-child(5) img, #main-content .row:nth-child(8) img, #main-content .row:nth-child(9) img, #main-content .row:nth-child(10) img, #main-content .row:nth-child(13) img, #main-content .row:nth-child(14) img, #main-content .row:nth-child(15) img, #main-content .row:nth-child(18) img, #main-content .row:nth-child(19) img, #main-content .row:nth-child(20) img, #main-content .row:nth-child(23) img, #main-content .row:nth-child(24) img, #main-content .row:nth-child(25) img, #main-content .row:nth-child(28) img, #main-content .row:nth-child(29) img, #main-content .row:nth-child(30) img {
+        width: 50%; }
+    #main-content .row #item-title a {
+      font-family: 'Song Myung', serif;
+      text-align: center;
+      color: #6D6D6D;
+      font-size: 20px; }
+    #main-content .row #item-content {
+      font-family: 'News Cycle', sans-serif; }
+    #main-content .row #item-price {
+      font-family: 'News Cycle', sans-serif;
+      font-style: italic; }
+    #main-content .row img {
+      width: 70%; }
 
-#daily img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px; }
+#daily {
+  float: left; }
+  #daily h1 {
+    font-family: 'Yesteryear', cursive;
+    color: #B53D3D;
+    font-size: 4em;
+    line-height: 2em;
+    text-align: left; }
+  #daily img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; }
+  #daily p {
+    font-family: 'News Cycle', sans-serif;
+    color: #6D6D6D;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5em; }
+    #daily p #day-title {
+      font-family: 'Song Myung', serif;
+      font-weight: 700; }
 
-#daily p {
-  font-family: 'News Cycle', sans-serif;
-  color: #6D6D6D;
-  font-size: 20px;
-  font-style: italic;
-  line-height: 1.5em; }
-  #daily p #day-title {
-    font-family: 'Song Myung', serif;
-    font-weight: 700; }
+#detail {
+  float: left; }
 
 #about {
   clear: both; }

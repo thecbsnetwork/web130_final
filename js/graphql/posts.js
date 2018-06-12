@@ -49,7 +49,7 @@ $(document).ready(function() {
                     <h2 id="item-title"><a href="item_detail.php#${item.id}">
                     ${item.title}</a></h2>
                     <img src="../final/images/item-${item.id}.jpg">
-                        <p  class="col-md-6" id="item-content">${item.content}</p>
+                        <p  class="col-md-12" id="item-content">${item.content}</p>
                          <p  class="col-md-3" id="item-price" >$ ${item.price}</p>
                         </div>
                     </div>`;
