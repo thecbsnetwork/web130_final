@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="banner col-12">
-                    <div class="col-lg-12 col-md-12 col-sm-12" id="special">
+                    <div class="col-lg-12 col-md-12 col-sm-12" id="special-header">
                         <div class="col-2">
                             <a href="item_detail.php#cji85dj701z3701292738ne7q">
                             Monday

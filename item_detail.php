@@ -1,9 +1,8 @@
 <?php include 'includes/header.php'?>
     <div class="container-fluid" id="detail">
         <div class="row">
-            <div id="item-content" class="col-lg-8 col-md-8 col-sm-12">
-                <h1 id="item-title" class="title"></h1>
-                <img src="images/<?=$dailyImage?>" alt="<?=$dailyAlt?>">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2 id="item-title" class="title"></h2>
                 <div id="item-image">
                     Loading...
                 </div>

@@ -6285,6 +6285,49 @@ a.text-dark:hover, a.text-dark:focus {
 /*********************colors *********************/
 /*universal*/
 /*custom*/
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  #main-content {
+    display: block;
+    clear: both; }
+    #main-content .row:nth-child(1), #main-content .row:nth-child(2), #main-content .row:nth-child(5), #main-content .row:nth-child(6), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(17), #main-content .row:nth-child(18), #main-content .row:nth-child(21), #main-content .row:nth-child(22), #main-content .row:nth-child(25), #main-content .row:nth-child(26), #main-content .row:nth-child(28), #main-content .row:nth-child(30) {
+      margin: 10px auto;
+      padding: 1em 0;
+      width: 50%;
+      border-left: 4px solid #3f7AA3;
+      float: left;
+      background-color: #FFFFFF; }
+      #main-content .row:nth-child(1) #item-title a, #main-content .row:nth-child(2) #item-title a, #main-content .row:nth-child(5) #item-title a, #main-content .row:nth-child(6) #item-title a, #main-content .row:nth-child(9) #item-title a, #main-content .row:nth-child(10) #item-title a, #main-content .row:nth-child(13) #item-title a, #main-content .row:nth-child(14) #item-title a, #main-content .row:nth-child(17) #item-title a, #main-content .row:nth-child(18) #item-title a, #main-content .row:nth-child(21) #item-title a, #main-content .row:nth-child(22) #item-title a, #main-content .row:nth-child(25) #item-title a, #main-content .row:nth-child(26) #item-title a, #main-content .row:nth-child(28) #item-title a, #main-content .row:nth-child(30) #item-title a {
+        font-family: 'Song Myung', serif;
+        text-align: center;
+        color: #6D6D6D;
+        font-size: 20px; }
+      #main-content .row:nth-child(1) #item-content, #main-content .row:nth-child(2) #item-content, #main-content .row:nth-child(5) #item-content, #main-content .row:nth-child(6) #item-content, #main-content .row:nth-child(9) #item-content, #main-content .row:nth-child(10) #item-content, #main-content .row:nth-child(13) #item-content, #main-content .row:nth-child(14) #item-content, #main-content .row:nth-child(17) #item-content, #main-content .row:nth-child(18) #item-content, #main-content .row:nth-child(21) #item-content, #main-content .row:nth-child(22) #item-content, #main-content .row:nth-child(25) #item-content, #main-content .row:nth-child(26) #item-content, #main-content .row:nth-child(28) #item-content, #main-content .row:nth-child(30) #item-content {
+        font-family: 'News Cycle', sans-serif; }
+      #main-content .row:nth-child(1) #item-price, #main-content .row:nth-child(2) #item-price, #main-content .row:nth-child(5) #item-price, #main-content .row:nth-child(6) #item-price, #main-content .row:nth-child(9) #item-price, #main-content .row:nth-child(10) #item-price, #main-content .row:nth-child(13) #item-price, #main-content .row:nth-child(14) #item-price, #main-content .row:nth-child(17) #item-price, #main-content .row:nth-child(18) #item-price, #main-content .row:nth-child(21) #item-price, #main-content .row:nth-child(22) #item-price, #main-content .row:nth-child(25) #item-price, #main-content .row:nth-child(26) #item-price, #main-content .row:nth-child(28) #item-price, #main-content .row:nth-child(30) #item-price {
+        font-family: 'News Cycle', sans-serif;
+        font-style: italic; }
+      #main-content .row:nth-child(1) img, #main-content .row:nth-child(2) img, #main-content .row:nth-child(5) img, #main-content .row:nth-child(6) img, #main-content .row:nth-child(9) img, #main-content .row:nth-child(10) img, #main-content .row:nth-child(13) img, #main-content .row:nth-child(14) img, #main-content .row:nth-child(17) img, #main-content .row:nth-child(18) img, #main-content .row:nth-child(21) img, #main-content .row:nth-child(22) img, #main-content .row:nth-child(25) img, #main-content .row:nth-child(26) img, #main-content .row:nth-child(28) img, #main-content .row:nth-child(30) img {
+        width: 70%; }
+    #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(7), #main-content .row:nth-child(8), #main-content .row:nth-child(11), #main-content .row:nth-child(12), #main-content .row:nth-child(15), #main-content .row:nth-child(16), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(27), #main-content .row:nth-child(28) {
+      width: auto;
+      background-color: #F7F7F7;
+      border: 1px solid #CCCCCC;
+      padding: 10px;
+      height: 400px;
+      float: left; }
+      #main-content .row:nth-child(3) #item-title a, #main-content .row:nth-child(4) #item-title a, #main-content .row:nth-child(7) #item-title a, #main-content .row:nth-child(8) #item-title a, #main-content .row:nth-child(11) #item-title a, #main-content .row:nth-child(12) #item-title a, #main-content .row:nth-child(15) #item-title a, #main-content .row:nth-child(16) #item-title a, #main-content .row:nth-child(19) #item-title a, #main-content .row:nth-child(20) #item-title a, #main-content .row:nth-child(23) #item-title a, #main-content .row:nth-child(24) #item-title a, #main-content .row:nth-child(27) #item-title a, #main-content .row:nth-child(28) #item-title a {
+        font-family: 'Song Myung', serif;
+        text-align: center;
+        color: #6D6D6D;
+        font-size: 20px; }
+      #main-content .row:nth-child(3) #item-content, #main-content .row:nth-child(4) #item-content, #main-content .row:nth-child(7) #item-content, #main-content .row:nth-child(8) #item-content, #main-content .row:nth-child(11) #item-content, #main-content .row:nth-child(12) #item-content, #main-content .row:nth-child(15) #item-content, #main-content .row:nth-child(16) #item-content, #main-content .row:nth-child(19) #item-content, #main-content .row:nth-child(20) #item-content, #main-content .row:nth-child(23) #item-content, #main-content .row:nth-child(24) #item-content, #main-content .row:nth-child(27) #item-content, #main-content .row:nth-child(28) #item-content {
+        font-family: 'News Cycle', sans-serif; }
+      #main-content .row:nth-child(3) #item-price, #main-content .row:nth-child(4) #item-price, #main-content .row:nth-child(7) #item-price, #main-content .row:nth-child(8) #item-price, #main-content .row:nth-child(11) #item-price, #main-content .row:nth-child(12) #item-price, #main-content .row:nth-child(15) #item-price, #main-content .row:nth-child(16) #item-price, #main-content .row:nth-child(19) #item-price, #main-content .row:nth-child(20) #item-price, #main-content .row:nth-child(23) #item-price, #main-content .row:nth-child(24) #item-price, #main-content .row:nth-child(27) #item-price, #main-content .row:nth-child(28) #item-price {
+        font-family: 'News Cycle', sans-serif;
+        font-style: italic; }
+      #main-content .row:nth-child(3) img, #main-content .row:nth-child(4) img, #main-content .row:nth-child(7) img, #main-content .row:nth-child(8) img, #main-content .row:nth-child(11) img, #main-content .row:nth-child(12) img, #main-content .row:nth-child(15) img, #main-content .row:nth-child(16) img, #main-content .row:nth-child(19) img, #main-content .row:nth-child(20) img, #main-content .row:nth-child(23) img, #main-content .row:nth-child(24) img, #main-content .row:nth-child(27) img, #main-content .row:nth-child(28) img {
+        width: 50%; } }
+
 * {
   padding: 0;
   margin: 0;
@@ -6474,6 +6517,9 @@ header {
   background-image: url("../images/food.jpg");
   background-size: cover;
   height: 550px; }
+  @media screen and (min-width: 40em) and (max-width: 63.99em) {
+    .banner {
+      margin-top: 80px; } }
   @media screen and (max-width: 39.99em) {
     .banner {
       height: auto; } }
@@ -6486,105 +6532,142 @@ header {
       .banner h2 a:hover {
         color: #FFCC00;
         text-decoration: none; }
-  .banner #special {
+  .banner #special-header {
     background-color: rgba(247, 247, 247, 0.6); }
-    .banner #special a {
+    .banner #special-header a {
       font-family: 'Song Myung', serif;
       font-size: 1.5em;
       color: #6D6D6D; }
       @media screen and (min-width: 40em) and (max-width: 63.99em) {
-        .banner #special a {
+        .banner #special-header a {
           font-size: .95em; } }
-      .banner #special a:hover {
+      .banner #special-header a:hover {
         text-decoration: none;
         color: #B53D3D; }
-
-#special {
-  display: flex;
-  padding: 2em;
-  margin: auto; }
-  @media screen and (max-width: 39.99em) {
-    #special {
-      display: block; } }
-  #special a {
-    color: #B53D3D;
-    font-size: .75em;
-    font-family: 'News Cycle', sans-serif; }
-    #special a:hover {
-      text-decoration: none;
-      color: #FFCC00; }
 
 #main-content {
   display: block;
   clear: both; }
-  #main-content .row {
+  #main-content .row:nth-child(1), #main-content .row:nth-child(2), #main-content .row:nth-child(6), #main-content .row:nth-child(7), #main-content .row:nth-child(11), #main-content .row:nth-child(12), #main-content .row:nth-child(16), #main-content .row:nth-child(17), #main-content .row:nth-child(21), #main-content .row:nth-child(22), #main-content .row:nth-child(26), #main-content .row:nth-child(27) {
     margin: 10px auto;
     padding: 1em 0;
     width: 50%;
     border-left: 4px solid #3f7AA3;
     float: left; }
     @media screen and (max-width: 39.99em) {
-      #main-content .row {
+      #main-content .row:nth-child(1), #main-content .row:nth-child(2), #main-content .row:nth-child(6), #main-content .row:nth-child(7), #main-content .row:nth-child(11), #main-content .row:nth-child(12), #main-content .row:nth-child(16), #main-content .row:nth-child(17), #main-content .row:nth-child(21), #main-content .row:nth-child(22), #main-content .row:nth-child(26), #main-content .row:nth-child(27) {
         width: auto;
-        float: none; } }
-    #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(5), #main-content .row:nth-child(8), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(15), #main-content .row:nth-child(18), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(25), #main-content .row:nth-child(28), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
-      width: 33.33%;
-      background-color: #F7F7F7;
-      border: 1px solid #CCCCCC;
-      padding: 10px;
-      height: 400px; }
-      @media screen and (max-width: 39.99em) {
-        #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(5), #main-content .row:nth-child(8), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(15), #main-content .row:nth-child(18), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(25), #main-content .row:nth-child(28), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
-          width: auto; } }
-      #main-content .row:nth-child(3) #item-title a, #main-content .row:nth-child(4) #item-title a, #main-content .row:nth-child(5) #item-title a, #main-content .row:nth-child(8) #item-title a, #main-content .row:nth-child(9) #item-title a, #main-content .row:nth-child(10) #item-title a, #main-content .row:nth-child(13) #item-title a, #main-content .row:nth-child(14) #item-title a, #main-content .row:nth-child(15) #item-title a, #main-content .row:nth-child(18) #item-title a, #main-content .row:nth-child(19) #item-title a, #main-content .row:nth-child(20) #item-title a, #main-content .row:nth-child(23) #item-title a, #main-content .row:nth-child(24) #item-title a, #main-content .row:nth-child(25) #item-title a, #main-content .row:nth-child(28) #item-title a, #main-content .row:nth-child(29) #item-title a, #main-content .row:nth-child(30) #item-title a {
-        font-family: 'Song Myung', serif;
-        text-align: center;
-        color: #6D6D6D;
-        font-size: 20px; }
-      #main-content .row:nth-child(3) #item-content, #main-content .row:nth-child(4) #item-content, #main-content .row:nth-child(5) #item-content, #main-content .row:nth-child(8) #item-content, #main-content .row:nth-child(9) #item-content, #main-content .row:nth-child(10) #item-content, #main-content .row:nth-child(13) #item-content, #main-content .row:nth-child(14) #item-content, #main-content .row:nth-child(15) #item-content, #main-content .row:nth-child(18) #item-content, #main-content .row:nth-child(19) #item-content, #main-content .row:nth-child(20) #item-content, #main-content .row:nth-child(23) #item-content, #main-content .row:nth-child(24) #item-content, #main-content .row:nth-child(25) #item-content, #main-content .row:nth-child(28) #item-content, #main-content .row:nth-child(29) #item-content, #main-content .row:nth-child(30) #item-content {
-        font-family: 'News Cycle', sans-serif; }
-      #main-content .row:nth-child(3) #item-price, #main-content .row:nth-child(4) #item-price, #main-content .row:nth-child(5) #item-price, #main-content .row:nth-child(8) #item-price, #main-content .row:nth-child(9) #item-price, #main-content .row:nth-child(10) #item-price, #main-content .row:nth-child(13) #item-price, #main-content .row:nth-child(14) #item-price, #main-content .row:nth-child(15) #item-price, #main-content .row:nth-child(18) #item-price, #main-content .row:nth-child(19) #item-price, #main-content .row:nth-child(20) #item-price, #main-content .row:nth-child(23) #item-price, #main-content .row:nth-child(24) #item-price, #main-content .row:nth-child(25) #item-price, #main-content .row:nth-child(28) #item-price, #main-content .row:nth-child(29) #item-price, #main-content .row:nth-child(30) #item-price {
-        font-family: 'News Cycle', sans-serif;
-        font-style: italic; }
-      #main-content .row:nth-child(3) img, #main-content .row:nth-child(4) img, #main-content .row:nth-child(5) img, #main-content .row:nth-child(8) img, #main-content .row:nth-child(9) img, #main-content .row:nth-child(10) img, #main-content .row:nth-child(13) img, #main-content .row:nth-child(14) img, #main-content .row:nth-child(15) img, #main-content .row:nth-child(18) img, #main-content .row:nth-child(19) img, #main-content .row:nth-child(20) img, #main-content .row:nth-child(23) img, #main-content .row:nth-child(24) img, #main-content .row:nth-child(25) img, #main-content .row:nth-child(28) img, #main-content .row:nth-child(29) img, #main-content .row:nth-child(30) img {
-        width: 50%; }
-    #main-content .row #item-title a {
+        float: none;
+        background-color: #F7F7F7;
+        border: 1px solid #CCCCCC;
+        padding: 10px;
+        height: auto; } }
+    #main-content .row:nth-child(1) #item-title a, #main-content .row:nth-child(2) #item-title a, #main-content .row:nth-child(6) #item-title a, #main-content .row:nth-child(7) #item-title a, #main-content .row:nth-child(11) #item-title a, #main-content .row:nth-child(12) #item-title a, #main-content .row:nth-child(16) #item-title a, #main-content .row:nth-child(17) #item-title a, #main-content .row:nth-child(21) #item-title a, #main-content .row:nth-child(22) #item-title a, #main-content .row:nth-child(26) #item-title a, #main-content .row:nth-child(27) #item-title a {
       font-family: 'Song Myung', serif;
       text-align: center;
       color: #6D6D6D;
       font-size: 20px; }
-    #main-content .row #item-content {
+    #main-content .row:nth-child(1) #item-content, #main-content .row:nth-child(2) #item-content, #main-content .row:nth-child(6) #item-content, #main-content .row:nth-child(7) #item-content, #main-content .row:nth-child(11) #item-content, #main-content .row:nth-child(12) #item-content, #main-content .row:nth-child(16) #item-content, #main-content .row:nth-child(17) #item-content, #main-content .row:nth-child(21) #item-content, #main-content .row:nth-child(22) #item-content, #main-content .row:nth-child(26) #item-content, #main-content .row:nth-child(27) #item-content {
       font-family: 'News Cycle', sans-serif; }
-    #main-content .row #item-price {
+    #main-content .row:nth-child(1) #item-price, #main-content .row:nth-child(2) #item-price, #main-content .row:nth-child(6) #item-price, #main-content .row:nth-child(7) #item-price, #main-content .row:nth-child(11) #item-price, #main-content .row:nth-child(12) #item-price, #main-content .row:nth-child(16) #item-price, #main-content .row:nth-child(17) #item-price, #main-content .row:nth-child(21) #item-price, #main-content .row:nth-child(22) #item-price, #main-content .row:nth-child(26) #item-price, #main-content .row:nth-child(27) #item-price {
       font-family: 'News Cycle', sans-serif;
       font-style: italic; }
-    #main-content .row img {
+    #main-content .row:nth-child(1) img, #main-content .row:nth-child(2) img, #main-content .row:nth-child(6) img, #main-content .row:nth-child(7) img, #main-content .row:nth-child(11) img, #main-content .row:nth-child(12) img, #main-content .row:nth-child(16) img, #main-content .row:nth-child(17) img, #main-content .row:nth-child(21) img, #main-content .row:nth-child(22) img, #main-content .row:nth-child(26) img, #main-content .row:nth-child(27) img {
       width: 70%; }
+      @media screen and (max-width: 39.99em) {
+        #main-content .row:nth-child(1) img, #main-content .row:nth-child(2) img, #main-content .row:nth-child(6) img, #main-content .row:nth-child(7) img, #main-content .row:nth-child(11) img, #main-content .row:nth-child(12) img, #main-content .row:nth-child(16) img, #main-content .row:nth-child(17) img, #main-content .row:nth-child(21) img, #main-content .row:nth-child(22) img, #main-content .row:nth-child(26) img, #main-content .row:nth-child(27) img {
+          width: 100%; } }
+  #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(5), #main-content .row:nth-child(8), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(15), #main-content .row:nth-child(18), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(25), #main-content .row:nth-child(28), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
+    width: 30.33%;
+    background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    float: left;
+    height: 400px; }
+    @media screen and (max-width: 39.99em) {
+      #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(5), #main-content .row:nth-child(8), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(15), #main-content .row:nth-child(18), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(25), #main-content .row:nth-child(28), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
+        width: auto; } }
+    #main-content .row:nth-child(3) #item-title a, #main-content .row:nth-child(4) #item-title a, #main-content .row:nth-child(5) #item-title a, #main-content .row:nth-child(8) #item-title a, #main-content .row:nth-child(9) #item-title a, #main-content .row:nth-child(10) #item-title a, #main-content .row:nth-child(13) #item-title a, #main-content .row:nth-child(14) #item-title a, #main-content .row:nth-child(15) #item-title a, #main-content .row:nth-child(18) #item-title a, #main-content .row:nth-child(19) #item-title a, #main-content .row:nth-child(20) #item-title a, #main-content .row:nth-child(23) #item-title a, #main-content .row:nth-child(24) #item-title a, #main-content .row:nth-child(25) #item-title a, #main-content .row:nth-child(28) #item-title a, #main-content .row:nth-child(29) #item-title a, #main-content .row:nth-child(30) #item-title a {
+      font-family: 'Song Myung', serif;
+      text-align: center;
+      color: #6D6D6D;
+      font-size: 20px; }
+    #main-content .row:nth-child(3) #item-content, #main-content .row:nth-child(4) #item-content, #main-content .row:nth-child(5) #item-content, #main-content .row:nth-child(8) #item-content, #main-content .row:nth-child(9) #item-content, #main-content .row:nth-child(10) #item-content, #main-content .row:nth-child(13) #item-content, #main-content .row:nth-child(14) #item-content, #main-content .row:nth-child(15) #item-content, #main-content .row:nth-child(18) #item-content, #main-content .row:nth-child(19) #item-content, #main-content .row:nth-child(20) #item-content, #main-content .row:nth-child(23) #item-content, #main-content .row:nth-child(24) #item-content, #main-content .row:nth-child(25) #item-content, #main-content .row:nth-child(28) #item-content, #main-content .row:nth-child(29) #item-content, #main-content .row:nth-child(30) #item-content {
+      font-family: 'News Cycle', sans-serif; }
+    #main-content .row:nth-child(3) #item-price, #main-content .row:nth-child(4) #item-price, #main-content .row:nth-child(5) #item-price, #main-content .row:nth-child(8) #item-price, #main-content .row:nth-child(9) #item-price, #main-content .row:nth-child(10) #item-price, #main-content .row:nth-child(13) #item-price, #main-content .row:nth-child(14) #item-price, #main-content .row:nth-child(15) #item-price, #main-content .row:nth-child(18) #item-price, #main-content .row:nth-child(19) #item-price, #main-content .row:nth-child(20) #item-price, #main-content .row:nth-child(23) #item-price, #main-content .row:nth-child(24) #item-price, #main-content .row:nth-child(25) #item-price, #main-content .row:nth-child(28) #item-price, #main-content .row:nth-child(29) #item-price, #main-content .row:nth-child(30) #item-price {
+      font-family: 'News Cycle', sans-serif;
+      font-style: italic; }
+    #main-content .row:nth-child(3) img, #main-content .row:nth-child(4) img, #main-content .row:nth-child(5) img, #main-content .row:nth-child(8) img, #main-content .row:nth-child(9) img, #main-content .row:nth-child(10) img, #main-content .row:nth-child(13) img, #main-content .row:nth-child(14) img, #main-content .row:nth-child(15) img, #main-content .row:nth-child(18) img, #main-content .row:nth-child(19) img, #main-content .row:nth-child(20) img, #main-content .row:nth-child(23) img, #main-content .row:nth-child(24) img, #main-content .row:nth-child(25) img, #main-content .row:nth-child(28) img, #main-content .row:nth-child(29) img, #main-content .row:nth-child(30) img {
+      width: 50%; }
+      @media screen and (max-width: 39.99em) {
+        #main-content .row:nth-child(3) img, #main-content .row:nth-child(4) img, #main-content .row:nth-child(5) img, #main-content .row:nth-child(8) img, #main-content .row:nth-child(9) img, #main-content .row:nth-child(10) img, #main-content .row:nth-child(13) img, #main-content .row:nth-child(14) img, #main-content .row:nth-child(15) img, #main-content .row:nth-child(18) img, #main-content .row:nth-child(19) img, #main-content .row:nth-child(20) img, #main-content .row:nth-child(23) img, #main-content .row:nth-child(24) img, #main-content .row:nth-child(25) img, #main-content .row:nth-child(28) img, #main-content .row:nth-child(29) img, #main-content .row:nth-child(30) img {
+          width: 100%; } }
 
-#daily {
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  #main-content {
+    display: block;
+    clear: both; }
+    #main-content .row:nth-child(1), #main-content .row:nth-child(2), #main-content .row:nth-child(5), #main-content .row:nth-child(6), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(17), #main-content .row:nth-child(18), #main-content .row:nth-child(21), #main-content .row:nth-child(22), #main-content .row:nth-child(25), #main-content .row:nth-child(26), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
+      margin: 10px auto;
+      padding: 1em 0;
+      width: 50%;
+      border: 0;
+      border-left: 4px solid #3f7AA3;
+      float: left;
+      background-color: #FFFFFF; }
+      #main-content .row:nth-child(1) #item-title a, #main-content .row:nth-child(2) #item-title a, #main-content .row:nth-child(5) #item-title a, #main-content .row:nth-child(6) #item-title a, #main-content .row:nth-child(9) #item-title a, #main-content .row:nth-child(10) #item-title a, #main-content .row:nth-child(13) #item-title a, #main-content .row:nth-child(14) #item-title a, #main-content .row:nth-child(17) #item-title a, #main-content .row:nth-child(18) #item-title a, #main-content .row:nth-child(21) #item-title a, #main-content .row:nth-child(22) #item-title a, #main-content .row:nth-child(25) #item-title a, #main-content .row:nth-child(26) #item-title a, #main-content .row:nth-child(29) #item-title a, #main-content .row:nth-child(30) #item-title a {
+        font-family: 'Song Myung', serif;
+        text-align: center;
+        color: #6D6D6D;
+        font-size: 20px; }
+      #main-content .row:nth-child(1) #item-content, #main-content .row:nth-child(2) #item-content, #main-content .row:nth-child(5) #item-content, #main-content .row:nth-child(6) #item-content, #main-content .row:nth-child(9) #item-content, #main-content .row:nth-child(10) #item-content, #main-content .row:nth-child(13) #item-content, #main-content .row:nth-child(14) #item-content, #main-content .row:nth-child(17) #item-content, #main-content .row:nth-child(18) #item-content, #main-content .row:nth-child(21) #item-content, #main-content .row:nth-child(22) #item-content, #main-content .row:nth-child(25) #item-content, #main-content .row:nth-child(26) #item-content, #main-content .row:nth-child(29) #item-content, #main-content .row:nth-child(30) #item-content {
+        font-family: 'News Cycle', sans-serif; }
+      #main-content .row:nth-child(1) #item-price, #main-content .row:nth-child(2) #item-price, #main-content .row:nth-child(5) #item-price, #main-content .row:nth-child(6) #item-price, #main-content .row:nth-child(9) #item-price, #main-content .row:nth-child(10) #item-price, #main-content .row:nth-child(13) #item-price, #main-content .row:nth-child(14) #item-price, #main-content .row:nth-child(17) #item-price, #main-content .row:nth-child(18) #item-price, #main-content .row:nth-child(21) #item-price, #main-content .row:nth-child(22) #item-price, #main-content .row:nth-child(25) #item-price, #main-content .row:nth-child(26) #item-price, #main-content .row:nth-child(29) #item-price, #main-content .row:nth-child(30) #item-price {
+        font-family: 'News Cycle', sans-serif;
+        font-style: italic; }
+      #main-content .row:nth-child(1) img, #main-content .row:nth-child(2) img, #main-content .row:nth-child(5) img, #main-content .row:nth-child(6) img, #main-content .row:nth-child(9) img, #main-content .row:nth-child(10) img, #main-content .row:nth-child(13) img, #main-content .row:nth-child(14) img, #main-content .row:nth-child(17) img, #main-content .row:nth-child(18) img, #main-content .row:nth-child(21) img, #main-content .row:nth-child(22) img, #main-content .row:nth-child(25) img, #main-content .row:nth-child(26) img, #main-content .row:nth-child(29) img, #main-content .row:nth-child(30) img {
+        width: 70%; }
+    #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(7), #main-content .row:nth-child(8), #main-content .row:nth-child(11), #main-content .row:nth-child(12), #main-content .row:nth-child(15), #main-content .row:nth-child(16), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(27), #main-content .row:nth-child(28) {
+      width: 50%;
+      background-color: #F7F7F7;
+      border: 1px solid #CCCCCC;
+      padding: 10px;
+      height: 400px;
+      float: left; }
+      #main-content .row:nth-child(3) #item-title a, #main-content .row:nth-child(4) #item-title a, #main-content .row:nth-child(7) #item-title a, #main-content .row:nth-child(8) #item-title a, #main-content .row:nth-child(11) #item-title a, #main-content .row:nth-child(12) #item-title a, #main-content .row:nth-child(15) #item-title a, #main-content .row:nth-child(16) #item-title a, #main-content .row:nth-child(19) #item-title a, #main-content .row:nth-child(20) #item-title a, #main-content .row:nth-child(23) #item-title a, #main-content .row:nth-child(24) #item-title a, #main-content .row:nth-child(27) #item-title a, #main-content .row:nth-child(28) #item-title a {
+        font-family: 'Song Myung', serif;
+        text-align: center;
+        color: #6D6D6D;
+        font-size: 20px; }
+      #main-content .row:nth-child(3) #item-content, #main-content .row:nth-child(4) #item-content, #main-content .row:nth-child(7) #item-content, #main-content .row:nth-child(8) #item-content, #main-content .row:nth-child(11) #item-content, #main-content .row:nth-child(12) #item-content, #main-content .row:nth-child(15) #item-content, #main-content .row:nth-child(16) #item-content, #main-content .row:nth-child(19) #item-content, #main-content .row:nth-child(20) #item-content, #main-content .row:nth-child(23) #item-content, #main-content .row:nth-child(24) #item-content, #main-content .row:nth-child(27) #item-content, #main-content .row:nth-child(28) #item-content {
+        font-family: 'News Cycle', sans-serif; }
+      #main-content .row:nth-child(3) #item-price, #main-content .row:nth-child(4) #item-price, #main-content .row:nth-child(7) #item-price, #main-content .row:nth-child(8) #item-price, #main-content .row:nth-child(11) #item-price, #main-content .row:nth-child(12) #item-price, #main-content .row:nth-child(15) #item-price, #main-content .row:nth-child(16) #item-price, #main-content .row:nth-child(19) #item-price, #main-content .row:nth-child(20) #item-price, #main-content .row:nth-child(23) #item-price, #main-content .row:nth-child(24) #item-price, #main-content .row:nth-child(27) #item-price, #main-content .row:nth-child(28) #item-price {
+        font-family: 'News Cycle', sans-serif;
+        font-style: italic; }
+      #main-content .row:nth-child(3) img, #main-content .row:nth-child(4) img, #main-content .row:nth-child(7) img, #main-content .row:nth-child(8) img, #main-content .row:nth-child(11) img, #main-content .row:nth-child(12) img, #main-content .row:nth-child(15) img, #main-content .row:nth-child(16) img, #main-content .row:nth-child(19) img, #main-content .row:nth-child(20) img, #main-content .row:nth-child(23) img, #main-content .row:nth-child(24) img, #main-content .row:nth-child(27) img, #main-content .row:nth-child(28) img {
+        width: 50%; } }
+
+#daily, #detail {
   float: left; }
-  #daily h1 {
+  #daily #today-date, #detail #today-date {
     font-family: 'Yesteryear', cursive;
     color: #B53D3D;
     font-size: 4em;
     line-height: 2em;
     text-align: left; }
-  #daily img {
+  #daily #item-image img, #detail #item-image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px; }
-  #daily p {
+  #daily #item-title, #detail #item-title {
+    font-family: 'Song Myung', serif;
+    font-weight: 700; }
+  #daily #item-content, #detail #item-content {
     font-family: 'News Cycle', sans-serif;
     color: #6D6D6D;
     font-size: 20px;
     font-style: italic;
     line-height: 1.5em; }
-    #daily p #day-title {
-      font-family: 'Song Myung', serif;
-      font-weight: 700; }
-
-#detail {
-  float: left; }
 
 #about {
   clear: both; }

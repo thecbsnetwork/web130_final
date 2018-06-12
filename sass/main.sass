@@ -1,6 +1,7 @@
 @import "bootstrap"
 @import "grid"
 @import "colors"
+@import "tablet"
 
 *
     padding: 0
@@ -178,6 +179,8 @@ header
     background-image: url('../images/food.jpg')
     background-size: cover
     height: 550px
+    @include size (tablet)
+        margin-top: 80px
     @include size (phone)
         height: auto
     h2
@@ -189,7 +192,7 @@ header
             &:hover
                 color: $yellow
                 text-decoration: none
-    #special
+    #special-header
         background-color: $lightGray60
         a 
             font-family: 'Song Myung', serif
@@ -201,33 +204,63 @@ header
                 text-decoration: none
                 color: $darkRed
 
-#special
-    display: flex
-    padding: 2em
-    margin: auto
-    @include size (phone)
-        display: block
-    a
-        color: $darkRed
-        font-size: .75em
-        font-family: 'News Cycle', sans-serif
-        &:hover
-            text-decoration: none
-            color: $yellow
+// #special, #detail
+//     display: flex
+//     float: left
+//     padding: 2em
+//     margin: auto
+//     @include size (phone)
+//         display: block
+//     a
+//         color: $darkRed
+//         font-size: .75em
+//         font-family: 'News Cycle', sans-serif
+//         &:hover
+//             text-decoration: none
+//             color: $yellow
 
 #main-content
     display: block
     clear: both
     .row
-        margin: 10px auto
-        padding: 1em 0
-        width: 50%
-        border-left: 4px solid $lightBlue
-        float: left
-        @include size(phone)
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(11),
+        &:nth-child(12),
+        &:nth-child(16),
+        &:nth-child(17),
+        &:nth-child(21),
+        &:nth-child(22),
+        &:nth-child(26),
+        &:nth-child(27)
+            margin: 10px auto
+            padding: 1em 0
+            width: 50%
+            border-left: 4px solid $lightBlue
+            float: left
+            @include size(phone)
                 width: auto
-                float: none
-                
+                float: none  
+                background-color: $lightGray
+                border: 1px solid $gray
+                padding: 10px
+                height: auto 
+            #item-title a
+                font-family: 'Song Myung', serif
+                text-align: center
+                color: $darkGray
+                font-size: 20px
+            #item-content
+                    font-family: 'News Cycle', sans-serif
+            #item-price
+                    font-family: 'News Cycle', sans-serif
+                    font-style: italic 
+            img
+                width: 70%
+                @include size(phone)
+                        width: 100%
         &:nth-child(3),
         &:nth-child(4),
         &:nth-child(5),
@@ -246,10 +279,11 @@ header
         &:nth-child(28),
         &:nth-child(29),
         &:nth-child(30)
-            width: 33.33%
+            width: 30.33%
             background-color: $lightGray
             border: 1px solid $gray
             padding: 10px
+            float: left
             height: 400px
             @include size(phone)
                 width: auto
@@ -265,41 +299,116 @@ header
                 font-style: italic 
             img
                 width: 50%
-        #item-title a
-                font-family: 'Song Myung', serif
-                text-align: center
-                color: $darkGray
-                font-size: 20px
-        #item-content
-                font-family: 'News Cycle', sans-serif
-        #item-price
-                font-family: 'News Cycle', sans-serif
-                font-style: italic 
-        img
-            width: 70%
-#daily
+                @include size(phone)
+                    width: 100%
+
+
+@include size (tablet)
+    #main-content
+        display: block
+        clear: both
+        .row
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(9),
+            &:nth-child(10),
+            &:nth-child(13),
+            &:nth-child(14),
+            &:nth-child(17),
+            &:nth-child(18),
+            &:nth-child(21),
+            &:nth-child(22),
+            &:nth-child(25),
+            &:nth-child(26),
+            &:nth-child(29),
+            &:nth-child(30)
+                margin: 10px auto
+                padding: 1em 0
+                width: 50%
+                border: 0
+                border-left: 4px solid $lightBlue
+                float: left
+                background-color: $white
+
+                #item-title a
+                    font-family: 'Song Myung', serif
+                    text-align: center
+                    color: $darkGray
+                    font-size: 20px
+                #item-content
+                    font-family: 'News Cycle', sans-serif
+                #item-price
+                    font-family: 'News Cycle', sans-serif
+                    font-style: italic 
+                img
+                    width: 70%
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(11),
+            &:nth-child(12),
+            &:nth-child(15),
+            &:nth-child(16),
+            &:nth-child(19),
+            &:nth-child(20),
+            &:nth-child(23),
+            &:nth-child(24),
+            &:nth-child(27),
+            &:nth-child(28)
+                width: 50%
+                background-color: $lightGray
+                border: 1px solid $gray
+                padding: 10px
+                height: 400px
+                float: left
+                #item-title a
+                    font-family: 'Song Myung', serif
+                    text-align: center
+                    color: $darkGray
+                    font-size: 20px
+                #item-content
+                    font-family: 'News Cycle', sans-serif
+                #item-price
+                    font-family: 'News Cycle', sans-serif
+                    font-style: italic 
+                img
+                    width: 50%
+            
+        
+
+
+                    
+        
+
+        
+#daily, #detail
     float: left
-    h1
+    #today-date
         font-family: 'Yesteryear', cursive
         color: $darkRed
         font-size: 4em
         line-height: 2em
         text-align: left
-    img
-        max-width: 100%
-        height: auto
-        border-radius: 8px
-    p
+    #item-image
+        img
+            max-width: 100%
+            height: auto
+            border-radius: 8px
+
+    #item-title
+        font-family: 'Song Myung', serif
+        font-weight: 700
+    #item-content
         font-family: 'News Cycle', sans-serif
         color: $darkGray
         font-size: 20px
         font-style: italic
         line-height: 1.5em
-        #day-title
-            font-family: 'Song Myung', serif
-            font-weight: 700
-#detail
-    float: left
+        
+
 #about
     clear: both
     h2

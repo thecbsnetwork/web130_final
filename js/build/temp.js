@@ -106,7 +106,7 @@ $(document).ready(function () {
 /* global $ JS_PAGE Cookies */
 
 var getAllItems = '\n    query AllItems {\n      allItems {\n        id,\n        title,\n        content,\n        price\n      }\n    }\n';
-var getItem = '\nquery GetItem($id:ID){\n    Item (id: $id){\n      title,\n      content,\n      price\n    }\n}\n';
+var getItem = '\nquery GetItem($id:ID){\n    Item (id: $id){\n        id,\n        title,\n        content,\n        price\n    }\n}\n';
 
 var CreateItem = '\n    mutation CreateItem ($authorId: ID!, $title: String!, $content: String!, $price: String!) {\n        createItem(authorId: $authorId, title: $title, content: $content, price: $price) {\n            id,\n            title,\n            content,\n            price\n        }\n    }\n';
 
@@ -130,7 +130,7 @@ $(document).ready(function () {
                     for (var _iterator = items[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                         var item = _step.value;
 
-                        html += '<div class="row">\n                    <div class="col-md-12" id="item-' + item.id + '">\n                    <h2 id="item-title"><a href="item_detail.php#' + item.id + '">\n                    ' + item.title + '</a></h2>\n                    <img src="../final/images/item-' + item.id + '.jpg">\n                        <p  class="col-md-12" id="item-content">' + item.content + '</p>\n                         <p  class="col-md-3" id="item-price" >$ ' + item.price + '</p>\n                        </div>\n                    </div>';
+                        html += '<div class="row">\n                    <div class="col-lg-12 col-md-10" id="item-' + item.id + '">\n                    <h2 id="item-title"><a href="item_detail.php#' + item.id + '">\n                    ' + item.title + '</a></h2>\n                    <img id="item-image" src="./images/item-' + item.id + '.jpg">\n                        <p  class="col-md-12" id="item-content">' + item.content + '</p>\n                         <p  class="col-md-4" id="item-price" >$ ' + item.price + '</p>\n                        </div>\n                    </div>';
                     }
                 } catch (err) {
                     _didIteratorError = true;
@@ -172,7 +172,7 @@ $(document).ready(function () {
                 $('#item-title').html(item.title);
                 $('#item-content').html(item.content);
                 $('#item-price').html(item.price);
-                $('#item-image').html('<img src="../final/images/food.jpg">');
+                $('#item-image').html('<img src="./images/item-' + item.id + '.jpg">');
             },
             contentType: 'application/json'
         });
