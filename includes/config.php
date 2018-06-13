@@ -57,7 +57,7 @@ $heading1 = "Today's Special";
         
     case 'Saturday':
         $heading2 = "Avocado and Egg Sandwich";
-        $content = "Stacked high with a fried egg, california avocado, jack cheese, and pepper sauce";
+        $content = "Stacked high with a fried egg, california avocado, jack cheese, and pepper sauce.";
         $price = "11";
         $dailyImage = 'sat.jpg';
         $dailyAlt = "saturday-sandwich";
@@ -65,7 +65,7 @@ $heading1 = "Today's Special";
         
     case 'Sunday':
         $heading2 = "Roasted Chicken and Vegetables";
-        $content = "Roasted mad hatcher chicken with grilled spring onions and fava bean relish";
+        $content = "Roasted mad hatcher chicken with grilled spring onions and fava bean relish.";
         $price = "28";
         $item_id = cji85mkn122yh0192wfeab8hh;
         $dailyImage = 'sun.jpg';

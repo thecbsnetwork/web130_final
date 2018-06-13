@@ -4,15 +4,15 @@
         <form>
             <div class="form-group ">
                 <label for="title" class="col-sm-2 col-form-label">Title</label>
-                <input type="text" name="title" id="title" class="form-control col-sm-8">
+                <input type="text" name="title" id="title" class="form-control col-lg-4 col-md-4 col-sm-8">
             </div>
             <div class="form-group ">
                 <label for="content" class="col-sm-2 col-form-label">Content</label>
-                <textarea name="content" id="content" class="form-control col-sm-8"></textarea>
+                <textarea name="content" id="content" class="form-control col-lg-4 col-md-4 col-sm-8"></textarea>
             </div>
             <div class="form-group ">
                 <label for="price" class="col-sm-2 col-form-label">Price</label>
-                <input type="text" name="price" id="price" class="form-control col-sm-2">
+                <input type="text" name="price" id="price" class="form-control col-lg-2 col-md-2 col-sm-2">
             </div>
             <div class="form-group">
                 <div class="col-sm-10">

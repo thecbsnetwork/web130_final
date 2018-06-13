@@ -3,13 +3,13 @@
         <form>
             <div class="form-group">
                 <label for="username" class="col-4 col-form-label">Email Address</label>
-                <div class="col-10">
+                <div class="col-lg-4 col-md-4 col-sm-8">
                     <input type="email" class="form-control" id="username" placeholder="Username">
                 </div>
             </div>
             <div class="form-group">
                 <label for="password" class="col-4 col-form-label">Password</label>
-                <div class="col-10">
+                <div class="col-lg-4 col-md-4 col-sm-8">
                     <input type="password" class="form-control" id="password" name="password" placeholder="*******">
                 </div>
             </div>

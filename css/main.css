@@ -6319,8 +6319,8 @@ a.text-dark:hover, a.text-dark:focus {
       width: auto;
       background-color: #F7F7F7;
       border: 1px solid #CCCCCC;
-      padding: 10px;
-      height: 400px;
+      padding: 1em 0;
+      height: 500px;
       float: left; }
       #main-content .row:nth-child(3) #item-title a, #main-content .row:nth-child(4) #item-title a, #main-content .row:nth-child(7) #item-title a, #main-content .row:nth-child(8) #item-title a, #main-content .row:nth-child(11) #item-title a, #main-content .row:nth-child(12) #item-title a, #main-content .row:nth-child(15) #item-title a, #main-content .row:nth-child(16) #item-title a, #main-content .row:nth-child(19) #item-title a, #main-content .row:nth-child(20) #item-title a, #main-content .row:nth-child(23) #item-title a, #main-content .row:nth-child(24) #item-title a, #main-content .row:nth-child(27) #item-title a, #main-content .row:nth-child(28) #item-title a {
         font-family: 'Song Myung', serif;
@@ -6589,7 +6589,7 @@ header {
     width: 50%;
     border-left: 4px solid #A07439;
     float: right;
-    height: 400px; }
+    height: 500px; }
     @media screen and (max-width: 39.99em) {
       #main-content .row:nth-child(1), #main-content .row:nth-child(2), #main-content .row:nth-child(6), #main-content .row:nth-child(7), #main-content .row:nth-child(11), #main-content .row:nth-child(12), #main-content .row:nth-child(16), #main-content .row:nth-child(17), #main-content .row:nth-child(21), #main-content .row:nth-child(22), #main-content .row:nth-child(26), #main-content .row:nth-child(27) {
         width: auto;
@@ -6625,10 +6625,9 @@ header {
     width: 30.33%;
     background-color: #F7F7F7;
     border: 1px solid #CCCCCC;
-    padding: 10px;
+    padding: 1em 0;
     float: left;
     height: 400px;
-    padding: 0;
     margin: 0; }
     @media screen and (max-width: 39.99em) {
       #main-content .row:nth-child(3), #main-content .row:nth-child(4), #main-content .row:nth-child(5), #main-content .row:nth-child(8), #main-content .row:nth-child(9), #main-content .row:nth-child(10), #main-content .row:nth-child(13), #main-content .row:nth-child(14), #main-content .row:nth-child(15), #main-content .row:nth-child(18), #main-content .row:nth-child(19), #main-content .row:nth-child(20), #main-content .row:nth-child(23), #main-content .row:nth-child(24), #main-content .row:nth-child(25), #main-content .row:nth-child(28), #main-content .row:nth-child(29), #main-content .row:nth-child(30) {
@@ -6636,7 +6635,7 @@ header {
         float: none;
         background-color: #F7F7F7;
         border: 1px solid #CCCCCC;
-        padding: 10px;
+        padding: 1em 0;
         height: auto;
         margin-bottom: 10px; } }
     #main-content .row:nth-child(3) #item-title a, #main-content .row:nth-child(4) #item-title a, #main-content .row:nth-child(5) #item-title a, #main-content .row:nth-child(8) #item-title a, #main-content .row:nth-child(9) #item-title a, #main-content .row:nth-child(10) #item-title a, #main-content .row:nth-child(13) #item-title a, #main-content .row:nth-child(14) #item-title a, #main-content .row:nth-child(15) #item-title a, #main-content .row:nth-child(18) #item-title a, #main-content .row:nth-child(19) #item-title a, #main-content .row:nth-child(20) #item-title a, #main-content .row:nth-child(23) #item-title a, #main-content .row:nth-child(24) #item-title a, #main-content .row:nth-child(25) #item-title a, #main-content .row:nth-child(28) #item-title a, #main-content .row:nth-child(29) #item-title a, #main-content .row:nth-child(30) #item-title a {
@@ -6690,8 +6689,8 @@ header {
       width: 50%;
       background-color: #F7F7F7;
       border: 1px solid #CCCCCC;
-      padding: 10px;
-      height: 400px;
+      padding: 1em 0;
+      height: 500px;
       float: left; }
       #main-content .row:nth-child(3) #item-title a, #main-content .row:nth-child(4) #item-title a, #main-content .row:nth-child(7) #item-title a, #main-content .row:nth-child(8) #item-title a, #main-content .row:nth-child(11) #item-title a, #main-content .row:nth-child(12) #item-title a, #main-content .row:nth-child(15) #item-title a, #main-content .row:nth-child(16) #item-title a, #main-content .row:nth-child(19) #item-title a, #main-content .row:nth-child(20) #item-title a, #main-content .row:nth-child(23) #item-title a, #main-content .row:nth-child(24) #item-title a, #main-content .row:nth-child(27) #item-title a, #main-content .row:nth-child(28) #item-title a {
         font-family: 'Song Myung', serif;
@@ -6780,9 +6779,16 @@ form {
   padding-top: 50px;
   font-family: 'News Cycle', sans-serif; }
 
-.btn-primary {
+#save-post-button, #login-button {
+  font-family: 'Song Myung', serif;
   background-color: #B53D3D;
   border-color: #B53D3D; }
+  #save-post-button:hover, #login-button:hover {
+    background-color: #A07439;
+    border-color: #A07439; }
+
+.btn-secondary {
+  font-family: 'Song Myung', serif; }
 
 footer {
   margin-top: 50px;
