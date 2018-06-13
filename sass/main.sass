@@ -246,7 +246,7 @@ header
             width: 50%
             border-left: 4px solid $brown
             float: right
-            height: 400px
+            height: 500px
             @include size(phone)
                 width: auto
                 float: none  
@@ -297,17 +297,16 @@ header
             width: 30.33%
             background-color: $lightGray
             border: 1px solid $gray
-            padding: 10px
+            padding: 1em 0
             float: left
             height: 400px
-            padding: 0
             margin: 0
             @include size(phone)
                 width: auto
                 float: none  
                 background-color: $lightGray
                 border: 1px solid $gray
-                padding: 10px
+                padding: 1em 0
                 height: auto
                 margin-bottom: 10px
             #item-title a
@@ -389,8 +388,8 @@ header
                 width: 50%
                 background-color: $lightGray
                 border: 1px solid $gray
-                padding: 10px
-                height: 400px
+                padding: 1em 0
+                height: 500px
                 float: left
                 #item-title a
                     font-family: 'Song Myung', serif
@@ -477,9 +476,16 @@ form
     padding-top: 50px
     font-family: 'News Cycle', sans-serif
 
-.btn-primary
+#save-post-button, #login-button
+    font-family: 'Song Myung', serif
     background-color: $darkRed
     border-color: $darkRed
+    &:hover 
+        background-color: $brown
+        border-color: $brown
+    
+.btn-secondary
+    font-family: 'Song Myung', serif
     
 footer 
     margin-top: 50px

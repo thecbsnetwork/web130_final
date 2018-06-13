@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="login.php"><i class="fas fa-user"></i> Admin Login</a>
+                        <a href="login.php">Admin Login <i class="fas fa-user"></i></a>
                     </li>
                 </ul>
             </div>
