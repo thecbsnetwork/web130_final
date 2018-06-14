@@ -5,32 +5,32 @@
                 <div class="banner col-12">
                     <div class="col-lg-12 col-md-12 col-sm-12" id="special-header">
                         <div class="col-2">
-                            <a href="item_detail.php#cji85dj701z3701292738ne7q">
+                            <a href="item_detail.php#cjidmtyln2hf801005kso564u">
                             Monday
                             </a>
                         </div>
                         <div class="col-2">
-                            <a href="item_detail.php#cji85fv5a20mr0192c2ddf2se">
+                            <a href="item_detail.php#cjidmux7b2h0v01261cbrcdxo">
                             Tuesday
                             </a>
                         </div>
                         <div class="col-2">
-                            <a href="item_detail.php#cji85h9l121xa0175wy22fqd8">
+                            <a href="item_detail.php#cjidmvfdm2ge20136xts8tsfc">
                             Wednesday
                             </a>
                         </div>
                         <div class="col-2">
-                            <a href="item_detail.php#cji85ijmm21n90192ppl5j1po">
+                            <a href="item_detail.php#cjidmwuj62gce0167gjs2mg1t">
                             Thursday
                             </a>
                         </div>
                         <div class="col-2">
-                            <a href="item_detail.php#cji85k4kc22nu01750imo0wmu">
+                            <a href="item_detail.php#cjidmxa322h710127xj70i413">
                             Friday
                             </a>
                         </div>
                         <div class="col-2">
-                            <a href="item_detail.php#cji85lcop21xn01412sqqo9ee">
+                            <a href="item_detail.php#cjidmxzwy2j0001009p0ho0o4">
                             Weekend
                             </a>
                         </div>
